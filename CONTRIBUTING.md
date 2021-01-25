@@ -16,7 +16,7 @@ The official SensioLabs Symfony Certification contains 75 randomly chosen questi
 * PHP
 * HTTP
 * Architecture
-* Standardization
+* Standardisation
 * Bundles
 * Controllers
 * Routing

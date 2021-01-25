@@ -39,7 +39,7 @@ questions:
     -
         question: 'Which argument can be passed to the debug:router command?'
         answers:
-            - {value: No argument can be passed, correct: true}
+            - {value: No argument can be passed, correct: false}
             - {value: A regexp search filter,    correct: false}
             - {value: A route limit,             correct: false}
             - {value: The route URL,             correct: false}
@@ -94,38 +94,7 @@ questions:
             - {value: 'php bin/console doctrine:mapping:import --all', correct: false}
         help:
             'http://assets.andreiabohner.org/symfony/sf42-console-cheat-sheet.pdf'
-    -
-        # CHECKME this has been removed for symfony 5 docs but console still support it, is it obsolete ?
-        question: 'What is the command line to validate the doctrine mapping files ?'
-        answers:
-            - {value: 'php bin/console doctrine:schema:validate',          correct: true}
-            - {value: 'php bin/console doctrine:schema:validation',          correct: false}
-            - {value: 'php bin/console doctrine:schema:update --dump-sql', correct: false}
-            - {value: 'php bin/console doctrine:schema:update --force',    correct: false}
-            - {value: 'php bin/console doctrine:mapping:convert',          correct: false}
-            - {value: 'php bin/console doctrine:mapping:import',           correct: false}
-        help: |
-            'https://symfony.com/doc/3.3/doctrine.html#add-mapping-information'
-    -
-        # FIXED calling config:dump-reference work both with extension alias and bundle name; config:dump is an alias for config:dump-reference (tested but not documented => remove from answers?)
-        # debug:config will work to display config of a bundle WITH a bundle name or alias as param 
-        question: "How do you display complete configuration of a bundle ?"
-        answers:
-            - {value: "php bin/console dump:config acme",                   correct: false}
-            - {value: "php bin/console config:dump-reference acme",         correct: true}
-            - {value: "php bin/console config:dump AcmeBundle",             correct: true}
-            - {value: "php bin/console config:dump-reference AcmeBundle",   correct: true}
-            - {value: "php bin/console debug:config",   correct: false}
-        help: |
-            'https://symfony.com/doc/current/bundles/configuration.html#dump-the-configuration https://symfony.com/doc/current/reference/configuration/debug.html'
-    -
-        # FIXME ambiguous question. descriptors are methods, NOT objects. also there is no mention of the term 'descriptor' in the doc 
-        question: 'Descriptors are objects to render documentation on Symfony Console Apps?'
-        answers:
-            - {value: 'Yes', correct: true}
-            - {value: 'No',  correct: false}
-        help: |
-            'https://symfony.com/doc/current/console.html#configuring-the-command'
+
     -
         question: 'Does the Symfony Console component needs PHP globals internals variables to work?'
         answers:

@@ -57,7 +57,7 @@ questions:
         help: |
             'https://symfony.com/doc/current/testing.html#unit-tests'
     -
-        question: 'Where live functional tests in Symfony (inside a project structure)?'
+        question: 'Where do functional tests live in Symfony (inside a project structure)?'
         answers:
             - {value: Tests/,               correct: false}
             - {value: Tests/Controller/,    correct: true}

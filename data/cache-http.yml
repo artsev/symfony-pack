@@ -1,7 +1,7 @@
-category: HTTP Cache
+category: HTTP Caching
 questions:
     -
-        question: 'What is the correct way to render a ESI tag using HTML?'
+        question: 'What is the correct way to render an ESI tag using HTML?'
         answers:
             - {value: <include:esi src="http://..." />, correct: false}
             - {value: <esi:include src="http://..." />, correct: true}
@@ -21,7 +21,7 @@ questions:
             'https://symfony.com/doc/current/http_cache/esi.html'
 
     -
-        question: 'Which HTTP headers belongs to expiration cache model?'
+        question: 'Which HTTP headers belong to the expiration cache model?'
         answers:
             - {value: Expires,       correct: true}
             - {value: Last-Modified, correct: false}
@@ -31,7 +31,7 @@ questions:
         help: |
             'https://symfony.com/doc/current/http_cache/expiration.html'
     -
-        question: 'Which HTTP headers belongs to validation cache model?'
+        question: 'Which HTTP headers belong to the validation cache model?'
         answers:
             - {value: Expires,       correct: false}
             - {value: Last-Modified, correct: true}
@@ -41,7 +41,7 @@ questions:
         help: |
             'https://symfony.com/doc/current/http_cache/validation.html'
     -
-        question: 'Which HTTP status code must be returned if the cache is still valid ?'
+        question: 'Which HTTP status code must be returned if the cache is still valid?'
         answers:
             - {value: '304', correct: true}
             - {value: '200', correct: false}
@@ -49,30 +49,30 @@ questions:
             - {value: '300', correct: false}
             - {value: '305', correct: false}
     -
-        question: 'True or False ? ESI need to be activated in configuration.'
+        question: 'True or False? ESI needs to be activated in configuration.'
         answers:
             - {value: "True",     correct: true}
             - {value: "False",    correct: false}
         help: |
             'https://symfony.com/doc/current/http_cache/esi.html'
     -
-        question: 'According to HTTP/1.1 what is the max value for Expires ?'
+        question: 'According to HTTP/1.1 what is the max value for Expires?'
         answers:
-            - {value: "one year", correct: true}
-            - {value: "one month", correct: false}
-            - {value: "one week", correct: false}
-            - {value: "There is not limit", correct: false}
+            - {value: "One year", correct: true}
+            - {value: "One month", correct: false}
+            - {value: "One week", correct: false}
+            - {value: "There is no limit", correct: false}
         help:
             'https://symfony.com/doc/current/http_cache/expiration.html#expiration-with-the-expires-header'
     -
-        question: 'True or False ? You can use both validation and expiration within the same Response.'
+        question: 'True or False? You can use both validation and expiration within the same Response.'
         answers:
             - {value: "True",     correct: true}
             - {value: "False",    correct: false}
         help: |
             'https://symfony.com/doc/current/http_cache/expiration.html'
     -
-        question: 'True or False ? Using ETag saves CPU cycles.'
+        question: 'True or False? Using ETag saves CPU cycles.'
         answers:
             - {value: "True",     correct: false}
             - {value: "False",    correct: true}

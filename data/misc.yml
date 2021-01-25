@@ -38,17 +38,15 @@ questions:
             - {value: Symfony\Bridge\Monolog\Log\LoggerInterface, correct: false}
         help: |
             https://symfony.com/doc/current/logging.html#logging-a-message
-
-        # FIXME this question is obsolete, sym 5 seems to have url_generating_routes.php but could not locate doc
-#   -
-#       question: 'Using a dev environment, what is the correct cached file name of the generated configuration routes?'        
-#       answers:
-#           - {value: "appDevUrlGenerator.php", correct: false}
-#           - {value: "appDevGeneratorUrl.php", correct: false}
-#           - {value: "appDevUrlDump.php",      correct: false}
-#           - {value: "UrlGenerator.php",    correct: true}
-#       help:
- #           https://symfony.com/doc/4.1/configuration/environments.html#environments-and-the-cache-directory           
+    -
+      question: 'Using a dev environment, what is the correct cached file name of the generated configuration routes?'        
+      answers:
+          - {value: "appDevUrlGenerator.php", correct: false}
+          - {value: "appDevGeneratorUrl.php", correct: false}
+          - {value: "appDevUrlDump.php",      correct: false}
+          - {value: "UrlGenerator.php",    correct: true}
+      help:
+           https://symfony.com/doc/current/configuration/front_controllers_and_kernel.html#environments-and-the-cache-directory           
     -
         # https://github.com/symfony/error-handler/blob/master/Debug.php is not in the Debug NS anymore, now in Component/ErrorHandler
         question: 'Using Symfony\Component\ErrorHandler\Debug static class, what is the only method available?'
@@ -95,7 +93,7 @@ questions:
         help: |
             https://symfony.com/doc/current/components/css_selector.html#id1
     -
-        question: 'Event Listeners is use to Regrouping multiple listeners inside a single class ?'
+        question: 'Event Listeners are used for Regrouping multiple listeners inside a single class?'
         answers:
             - {value: "False",  correct: true}
             - {value: "True",   correct: false}
