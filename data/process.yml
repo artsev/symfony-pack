@@ -10,3 +10,12 @@ questions:
         help: |
             https://symfony.com/doc/current/components/process.html#stopping-a-process
             https://www.computerhope.com/unix/signals.htm#system-specific
+    -
+        question: 'While running a process asynchronously, which method would you use to check if the process is done?'
+        answers:
+            - { value: 'isRunning()', correct: true }
+            - { value: 'isProcessing()', correct: false }
+            - { value: 'isAsync()', correct: false }
+            - { value: 'isStarted()', correct: false }
+        help: |
+            http://symfony.com/doc/current/components/process.html#running-processes-asynchronously

@@ -45,3 +45,42 @@ questions:
             - {value: "$this->generateAbsoluteUrl()", correct: false}
         help: |
             https://symfony.com/doc/current/routing.html#generating-urls-in-controllers
+    -
+        question: "Consider the following route definition:"
+        answers:
+            - { value: "http://forum.domain.tld/category/programming/thread-42.html?page=3", correct: true }
+            - { value: "http://www.domain.tld/category/73/thread-hello-world.html", correct: false }
+            - { value: "http://forum.domain.tld/category/documentary/thread-aircrafts-mega-factory.html", correct: true }
+            - { value: "http://forum.domain.tld/category/18-roles-games/world-of-warcraft.html", correct: false }
+            - { value: "http://forum.domain.tld/category/tv-shows/thread-dexter?page=3", correct: true }
+        help: |
+            https://symfony.com/doc/current/routing.html
+            https://symfony.com/doc/current/components/routing.html
+    -
+        question: |
+            Matching
+            In the list below, which url patterns match the following blog route definition?
+
+            $route = new Route(
+                '/blog/{id}/{slug}.{_format}',
+                ['_controller' => 'blogPost', '_format' => 'html'],
+                ['id' => '\d+', '_format' => 'html|json']
+            );
+        answers:
+            - { value: "/blog/abc/my-blog-post.json", correct: false }
+            - { value: "/blog/30/a.html", correct: true }
+            - { value: "/blog/12/blog", correct: false }
+            - { value: "/blog/10/mon-blog-post.xml", correct: false }
+            - { value: "/blog/8/my-blog-post.html", correct: true }
+        help: |
+            http://symfony.com/doc/current/components/routing/introduction.html#defining-routes
+            http://symfony.com/doc/current/routing.html
+    -
+        question : |
+            Routing match
+            If no methods are specified for a route, what methods will be matched?
+        answers:
+            - { value: "Safe methods: GET or HEAD", correct: false }
+            - { value: "Any methods", correct: true }
+            - { value: "GET or POST", correct: false }
+            - { value: "GET", correct: false }

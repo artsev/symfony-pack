@@ -46,7 +46,6 @@ questions:
         help: |
             https://symfony.com/doc/current/components/form.html#csrf-protection
     -
-        # FIXME setDefaultOptions now deprecated in favor of configureOptions https://github.com/symfony/symfony/pull/12891
         question: 'Using Form component, which option can you use into configureOptions() method to define CSRF field name?'
         answers:
             - {value: csrf_field_name, correct: true}
@@ -142,8 +141,6 @@ questions:
         help: |
             https://symfony.com/doc/current/form/events.html#registering-event-listeners-or-event-subscribers
     -
-        # FIXME all non numeric text fields extend from TextType. 
-        # Looking from the source they extend AbstractType but their getParent method return TextType and doc says they extend TextType
         question: 'Which one of these types extends from TextType?'
         answers:
             - {value: "MoneyType",    correct: false}
@@ -199,7 +196,6 @@ questions:
         help: |
             https://symfony.com/doc/current/forms.html#creating-form-classes
     -
-        # TESTME is the first answer really correct ?
         question: 'How to add an extra field `extra` with the form ?'
         answers:
             - {value: "$builder->add('extra', null, ['mapped' => false])",    correct: true}

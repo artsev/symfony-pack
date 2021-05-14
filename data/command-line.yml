@@ -161,12 +161,10 @@ questions:
             - {value: 'initialize has InputInterface, OutputInterface parameters',                  correct: true}
             - {value: 'Events can disable the command',                                              correct: true}
         help: |
-            'https://symfony.com/doc/current/components/console/events.html 
+            https://symfony.com/doc/current/components/console/events.html
              https://symfony.com/doc/current/components/console/events.html#disable-commands-inside-listeners
-             https://github.com/symfony/console/blob/master/Command/Command.php'
+             https://github.com/symfony/console/blob/master/Command/Command.php
     -
-        # CHECKME source file https://github.com/symfony/console/blob/master/Command/Command.php says only execute() is mandatory; 
-        # besides, doc doesnt say configure is mandatory 
         question: 'Which function are mandatory to your command class ?'
         answers:
             - {value: "configure()", correct: true}

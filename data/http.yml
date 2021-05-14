@@ -195,3 +195,15 @@ questions:
         help: |
             https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html
             https://tools.ietf.org/html/rfc7231#section-4.2.2
+    -
+        question: |
+            KernelEvents
+            What is the argument passed to listeners of kernel.response?
+        answers:
+            - { value: "FilterResponseEvent", correct: true }
+            - { value: "PostResponseEvent", correct: false }
+            - { value: "ResponseEvent", correct: false }
+            - { value: "FinishRequestEvent", correct: false }
+            - { value: "GetResponseEvent", correct: false }
+        help: |
+            https://symfony.com/doc/3.4/components/http_kernel.html#creating-an-event-listener

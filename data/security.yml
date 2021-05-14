@@ -136,3 +136,10 @@ questions:
             - {value: "supportsClass($class)", correct: true}
         help: |
             https://symfony.com/doc/current/security/user_provider.html#creating-a-custom-user-provider
+    -
+        question: 'Authorization is the process that makes sure that a user is who he claims to be?'
+        answers:
+            - {value: 'true', correct: false}
+            - {value: 'false', correct: true}
+        help: |
+            http://symfony.com/doc/current/components/security/authorization.html

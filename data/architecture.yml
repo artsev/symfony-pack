@@ -92,7 +92,7 @@ questions:
             - {value: "?%%s",    correct: false}
             - {value: "?%s",     correct: false}
         help: |
-             'https://symfony.com/doc/current/reference/configuration/framework.html#version-format'
+             https://symfony.com/doc/current/reference/configuration/framework.html#version-format
     -
         question: 'Instantiating a new Symfony\Component\HttpKernel\Kernel, what is the correct arguments order?'
         answers:
@@ -176,7 +176,7 @@ questions:
             - {value: "yes", correct: true}
             - {value: "no", correct: false}
         help: |
-            'https://symfony.com/doc/current/components/http_kernel.html#the-workflow-of-a-request'
+            https://symfony.com/doc/current/components/http_kernel.html#the-workflow-of-a-request
     -
         question: 'How do you detect if an Event was stopped during runtime?'
         answers:

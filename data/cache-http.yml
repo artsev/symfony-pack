@@ -39,7 +39,7 @@ questions:
             - {value: Cache-Control, correct: false}
             - {value: Cookie,        correct: false}
         help: |
-            'https://symfony.com/doc/current/http_cache/validation.html'
+            https://symfony.com/doc/current/http_cache/validation.html
     -
         question: 'Which HTTP status code must be returned if the cache is still valid?'
         answers:
@@ -62,8 +62,8 @@ questions:
             - {value: "One month", correct: false}
             - {value: "One week", correct: false}
             - {value: "There is no limit", correct: false}
-        help:
-            'https://symfony.com/doc/current/http_cache/expiration.html#expiration-with-the-expires-header'
+        help: |
+            https://symfony.com/doc/current/http_cache/expiration.html#expiration-with-the-expires-header
     -
         question: 'True or False? You can use both validation and expiration within the same Response.'
         answers:

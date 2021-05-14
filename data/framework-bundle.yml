@@ -1,15 +1,18 @@
-category: Finder
+category: FrameworkBundle
 questions:
-  - question: 'With the Finder, which method is correct to exclude a logs directory from matching ?'
+  - question: 'Is the translation activated by default?'
     answers:
-      - { value: $finder->in(__DIR__)->notMatch('logs');, correct: false }
-      - { value: $finder->in(__DIR__)->ignore('logs');, correct: false }
-      - { value: $finder->in(__DIR__)->excludeDir('logs');, correct: false }
-      - { value: $finder->in(__DIR__)->ignoreFiles('logs');, correct: false }
-      - { value: $finder->in(__DIR__)->ignoreDirectory('logs');, correct: false }
-      - { value: $finder->in(__DIR__)->ignoreDir('logs');, correct: false }
-      - { value: $finder->in(__DIR__)->exclude('logs');, correct: true }
+      - { value: No, correct: true }
+      - { value: Yes, correct: false }
     help: |
-      https://symfony.com/doc/current/components/finder.html#location
-      http://api.symfony.com/master/Symfony/Component/Finder/Finder.html#method_exclude
-      https://github.com/symfony/finder/blob/master/Finder.php#L297
+      http://symfony.com/doc/current/book/translation.html#configuration
+
+  - question: "Let's consider a controller making his job. Once the request handled, this controller returns a RedirectResponse in destination to another controller. Let's assume both of the following controllers extend AbstractController class from the Symfony FrameworkBundle. What is the best way for the first controller to send a message to the next one?"
+    answers:
+      - { value: "$this->addMessage('info', 'Some message');", correct: false }
+      - { value: "$this->addFlash('info', 'Some message');", correct: true }
+      - { value: "$this->get('session')->getFlashBag()->add('message', 'Some message');", correct: false }
+      - { value: "$_SESSION['message'] = 'Some message';", correct: false }
+    help: |
+      https://symfony.com/doc/current/controller.html#flash-messages
+      https://github.com/symfony/http-foundation/blob/master/Session/Flash/FlashBag.php

@@ -168,10 +168,21 @@ questions:
         help: |
             http://php.net/manual/en/language.oop5.static.php
     -
-        question: 'Which keyword permit to use the late static binding ?'
+        question: 'Which keyword permit to use the late static binding?'
         answers:
             - {value: "self",    correct: false}
             - {value: "static",   correct: true}
             - {value: "parent",   correct: false}
         help: |
             http://php.net/manual/en/language.oop5.late-static-bindings.php
+    -
+        question: |
+          Array and loops
+          Which interface(s) should an Object implement to be usable in a foreach statement?
+        answers:
+          - { value: 'Traversable', correct: true }
+          - { value: 'IteratorAggregate', correct: true }
+          - { value: 'ArrayAccess', correct: false }
+          - { value: 'Iterator', correct: true }
+        help: |
+            http://php.net/manual/en/reserved.interfaces.php

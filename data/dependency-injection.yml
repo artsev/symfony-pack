@@ -81,13 +81,14 @@ questions:
             - {value: "PassConfig::TYPE_COMPILE",              correct: false}
             - {value: "PassConfig::TYPE_BEFORE_COMPILING",     correct: false}
         help: |
-            'https://symfony.com/doc/current/components/dependency_injection/compilation.html#controlling-the-pass-ordering'
+            https://symfony.com/doc/current/components/dependency_injection/compilation.html#controlling-the-pass-ordering
+            PassConfig::TYPE_BEFORE_OPTIMIZATION
+            PassConfig::TYPE_OPTIMIZE
+            PassConfig::TYPE_BEFORE_REMOVING
+            PassConfig::TYPE_REMOVE
+            PassConfig::TYPE_AFTER_REMOVING
 
     -
-        # FIXME unclear question text and contradictory answers 
-        # ls -al => App_KernelDevDebugContainer.php (symfony 5)
-        # <> Symfony doc => appDevDebugProjectContainer.php (symfony 5)
-        # <> certificationy => srcApp_KernelDevDebugContainer.php (symfony ?) 
         question: "As dev environment, what is the name of dumped container ?"
         answers:
             - {value: "srcApp_KernelDevDebugContainer.php",    correct: false}
@@ -95,7 +96,7 @@ questions:
             - {value: "appDevDebugProjectContainer.php",    correct: false}
             - {value: "appDevProjectContainer.php",         correct: false}
             - {value: "appDevDebugProjectServiceContainer", correct: false}
-            - {value: "srcApp_DevDebugContainer.php",               correct: false}
+            - {value: "srcApp_DevDebugContainer.php",       correct: false}
         help: |
             '# ls -al var/cache/dev
              https://symfony.com/doc/current/configuration/front_controllers_and_kernel.html#environments-and-the-cache-directory'
@@ -166,3 +167,14 @@ questions:
             - { value: "services", correct: true }
         help: |
             https://symfony.com/doc/current/service_container/import.html
+    -
+        question: 'Which configuration format is the most efficient for the container when registering new services?'
+        answers:
+            - { value: "XML", correct: false }
+            - { value: "PHP", correct: false }
+            - { value: "YAML", correct: false }
+            - { value: "None of them.", correct: true }
+        help: |
+            https://symfony.com/doc/current/routing.html#creating-routes
+            https://symfony.com/doc/current/configuration.html#configuration-formats
+
