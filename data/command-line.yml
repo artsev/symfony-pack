@@ -162,8 +162,8 @@ questions:
             - {value: 'Events can disable the command',                                              correct: true}
         help: |
             https://symfony.com/doc/current/components/console/events.html
-             https://symfony.com/doc/current/components/console/events.html#disable-commands-inside-listeners
-             https://github.com/symfony/console/blob/master/Command/Command.php
+            https://symfony.com/doc/current/components/console/events.html#disable-commands-inside-listeners
+            https://github.com/symfony/console/blob/master/Command/Command.php
     -
         question: 'Which function are mandatory to your command class ?'
         answers:
