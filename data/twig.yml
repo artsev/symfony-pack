@@ -1,0 +1,28 @@
+category: Twig
+questions:
+    -
+        question: |
+            Node class property
+            When writing a Twig_Test, what is a node_class for?
+        answers:
+            - { value: 'The given test will be compiled into PHP primitives.', correct: true }
+            - { value: 'The given test will rely on a custom Twig_NodeVisitorInterface.', correct: false }
+            - { value: 'The node_class is a mandatory option to get defined in a Twig_Environment.', correct: false }
+            - { value: 'The given test will use a semantic validation in addition to the basic evaluation.', correct: false }
+        help: |
+            https://twig.symfony.com/doc/2.x/advanced.html#tests
+    -
+        question: |
+            Twig
+            Which of the following statements will display bar ?
+        answers:
+            - { value: "{{ [] is not empty ? 'foo' : 'bar' }}", correct: true }
+            - { value: "{{ '' ? 'foo' : 'bar' }}", correct: true }
+            - { value: "{{ '0' ? 'foo' : 'bar' }}", correct: true }
+            - { value: "{{ '0' is not empty ? 'foo' : 'bar' }}", correct: false }
+            - { value: "{{ [] ? 'foo' : 'bar' }}", correct: true }
+            - { value: "{{ 0 ? 'foo' : 'bar' }}", correct: true }
+            - { value: "{{ '' is not empty ? 'foo' : 'bar' }}", correct: true }
+        help: |
+            https://twig.symfony.com/doc/1.x/tags/if.html
+            https://github.com/twigphp/Twig/blob/1.x/src/Extension/CoreExtension.php (twig_test_empty)

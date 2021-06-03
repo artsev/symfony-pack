@@ -1,0 +1,12 @@
+category: Doctrine
+questions:
+    -
+        question: |
+            Removing entities
+            Which assertions are true about removing entities?
+        answers:
+            - { value: 'The entity will be deleted on the next invocation of EntityManager#flush() that involves that entity.', correct: true }
+            - { value: 'Invoking EntityManager#remove() on an entity does an immediate SQL DELETE.', correct: false }
+        help: |
+            Just like persist, invoking remove on an entity does NOT cause an immediate SQL DELETE to be issued on the database. The entity will be deleted on the next invocation of EntityManager#flush() that involves that entity. This means that entities scheduled for removal can still be queried for and appear in query and collection results.
+            http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/working-with-objects.html#removing-entities
