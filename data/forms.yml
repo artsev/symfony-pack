@@ -248,8 +248,7 @@ questions:
             - { value: "$builder->add('tags', TextType::class)->addModelTransformer(...);", correct: false }
         help: |
             https://symfony.com/doc/current/form/data_transformers.html
-    -
-        question: |
+    -   question: |
             Render the rest of the fields
             Is there a way to make sure that the {{ form_end(form) }} does not render all the fields not rendered?
         answers:
@@ -257,16 +256,15 @@ questions:
             - { value: 'Yes', correct: true }
         help: |
             http://symfony.com/doc/current/reference/forms/twig_reference.html#form-end-view-variables
-    -
-        question: |
+    -   question: |
             Render
             How can you render a form named form in a Twig template?
         answers:
             - { value: |
-                  {{ form_start(form) }}
-                  {{ form_widget(form) }}
-                  {{ form_end(form) }}
-                ,
+                    {{ form_start(form) }}
+                    {{ form_widget(form) }}
+                    {{ form_end(form) }}
+              ,
                 correct: true }
             - { value: '{{ form(form) }}', correct: true }
             - { value: '{{ render_form(form) }}', correct: false }

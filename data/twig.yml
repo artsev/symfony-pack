@@ -1,7 +1,6 @@
 category: Twig
 questions:
-    -
-        question: |
+    -   question: |
             Node class property
             When writing a Twig_Test, what is a node_class for?
         answers:
@@ -11,8 +10,7 @@ questions:
             - { value: 'The given test will use a semantic validation in addition to the basic evaluation.', correct: false }
         help: |
             https://twig.symfony.com/doc/2.x/advanced.html#tests
-    -
-        question: |
+    -   question: |
             Twig
             Which of the following statements will display bar ?
         answers:

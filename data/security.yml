@@ -122,8 +122,7 @@ questions:
             - { value: "supportsClass($class)", correct: true }
         help: |
             https://symfony.com/doc/current/security/user_provider.html#creating-a-custom-user-provider
-    -
-        question: |
+    -   question: |
             Authorization
             Authorization is the process that makes sure that a user is who he claims to be?
         answers:
@@ -131,8 +130,7 @@ questions:
             - { value: 'false', correct: true }
         help: |
             http://symfony.com/doc/current/components/security/authorization.html
-    -
-        question: |
+    -   question: |
             Authentication
             When using HTTP basic, how does the server starts the authentication process?
         answers:

@@ -186,8 +186,7 @@ questions:
             - { value: "GetResponseEvent", correct: false }
         help: |
             https://symfony.com/doc/3.4/components/http_kernel.html#creating-an-event-listener
-    -
-        question: |
+    -   question: |
             HTTP Expiration Model
             What can happen to an HTTP response whose Cache-Control header value equals private, max-age=120?
         answers:
@@ -199,8 +198,7 @@ questions:
         help: |
             https://tools.ietf.org/html/rfc2616#page-79
             https://www.imperva.com/learn/performance/cache-control/#:~:text=Cache%2DControl%3A%20Private,content%20delivery%20network%20(CDN).
-    -
-        question: |
+    -   question: |
             Redirection
             What does the 308 HTTP status code stand for?
         answers:
