@@ -1,0 +1,18 @@
+category: Doctrine
+questions:
+    -   question: |
+            Binding Types
+            Will this prepared statement work?
+
+            $stmt = $conn->executeQuery(
+                'SELECT * FROM user WHERE id IN (?)',
+                [[1, 2, 3, 4, 5, 6]],
+                [\Doctrine\DBAL\Connection::PARAM_INT_ARRAY]
+            );
+            $users = $stmt->fetchAll();
+        answers:
+            - { value: 'Yes', correct: true }
+            - { value: 'No', correct: false }
+        help: |
+            The $types variable contains the PDO or Doctrine Type constants.
+            http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/data-retrieval-and-manipulation.html#executequery
