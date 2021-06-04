@@ -7,7 +7,7 @@ questions:
             - { value: Add a "path" attribute,      correct: false }
             - { value: Add a "subdomain" attribute, correct: false }
         help: |
-            https://symfony.com/doc/current/routing.html#sub-domain-routing
+            https://symfony.com/doc/5.0/routing.html#sub-domain-routing
     -   question: 'What variable can be used as controller argument to get the name of the route name?'
         answers:
             - { value: $_route,            correct: true }
@@ -15,7 +15,7 @@ questions:
             - { value: $_method,           correct: false }
             - { value: $_action,           correct: false }
         help: |
-            https://symfony.com/doc/current/routing.html#getting-the-route-name-and-parameters
+            https://symfony.com/doc/5.0/routing.html#getting-the-route-name-and-parameters
     -   question: 'Using XML, how to ensure that a route is accessed via HTTPS?'
         answers:
             - { value: schemes="https",  correct: true }
@@ -23,7 +23,7 @@ questions:
             - { value: protocol="https", correct: false }
             - { value: ensure="https",   correct: false }
         help: |
-            https://symfony.com/doc/current/routing.html#forcing-https-on-generated-urls
+            https://symfony.com/doc/5.0/routing.html#forcing-https-on-generated-urls
     -   question: 'Which special routing parameters are available in Symfony:'
         answers:
             - { value: "_controller",      correct: true }
@@ -32,14 +32,14 @@ questions:
             - { value: "_locale",      correct: true }
             - { value: "_route",      correct: false }
         help: |
-            https://symfony.com/doc/current/routing.html#special-parameters
+            https://symfony.com/doc/5.0/routing.html#special-parameters
     -   question: 'How to generate absolute URL for a given route in controller ?'
         answers:
             - { value: "By using UrlGeneratorInterface::ABSOLUTE_URL as third parameter for generateUrl", correct: true }
             - { value: "generateUrl generate absolute URL by default", correct: false }
             - { value: "$this->generateAbsoluteUrl()", correct: false }
         help: |
-            https://symfony.com/doc/current/routing.html#generating-urls-in-controllers
+            https://symfony.com/doc/5.0/routing.html#generating-urls-in-controllers
     -   question: |
             Route definition
             Consider the following route definition:
@@ -50,8 +50,8 @@ questions:
             - { value: "http://forum.domain.tld/category/18-roles-games/world-of-warcraft.html", correct: false }
             - { value: "http://forum.domain.tld/category/tv-shows/thread-dexter?page=3", correct: true }
         help: |
-            https://symfony.com/doc/current/routing.html
-            https://symfony.com/doc/current/components/routing.html
+            https://symfony.com/doc/5.0/routing.html
+            https://symfony.com/doc/5.0/components/routing.html
     -   question: |
             Matching
             In the list below, which url patterns match the following blog route definition?

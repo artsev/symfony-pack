@@ -24,7 +24,7 @@ questions:
                                 template: static/privacy.html.twig
                 correct: true
         help: |
-            https://symfony.com/doc/current/templates.html#rendering-a-template-directly-from-a-route
+            https://symfony.com/doc/5.0/templates.html#rendering-a-template-directly-from-a-route
     -   question: 'What is the LoggerInterface correct namespace?'
         answers:
             - { value: Psr\LoggerInterface,                        correct: false }
@@ -32,7 +32,7 @@ questions:
             - { value: Symfony\Bridge\Monolog\LoggerInterface,     correct: false }
             - { value: Symfony\Bridge\Monolog\Log\LoggerInterface, correct: false }
         help: |
-            https://symfony.com/doc/current/logging.html#logging-a-message
+            https://symfony.com/doc/5.0/logging.html#logging-a-message
     -   question: 'Using a dev environment, what is the correct cached file name of the generated configuration routes?'
         answers:
             - { value: "appDevUrlGenerator.php", correct: false }
@@ -40,7 +40,7 @@ questions:
             - { value: "appDevUrlDump.php",      correct: false }
             - { value: "UrlGenerator.php",    correct: true }
         help:
-            https://symfony.com/doc/current/configuration/front_controllers_and_kernel.html#environments-and-the-cache-directory
+            https://symfony.com/doc/5.0/configuration/front_controllers_and_kernel.html#environments-and-the-cache-directory
     -
         question: 'Using Symfony\Component\ErrorHandler\Debug static class, what is the only method available?'
         answers:
@@ -69,7 +69,7 @@ questions:
                 correct: false
             - { value: 'none of the above',             correct: true }
         help: |
-            https://symfony.com/doc/current/templating/hinclude.html
+            https://symfony.com/doc/5.0/templating/hinclude.html
     -   question: 'What is the correct CssSelector class namespace?'
         answers:
             - { value: Symfony\Component\CssSelector\CssSelector,  correct: true }
@@ -77,10 +77,10 @@ questions:
             - { value: Symfony\Component\DomCrawler\CssSelector,   correct: false }
             - { value: Symfony\Bundle\FrameworkBundle\CssSelector, correct: false }
         help: |
-            https://symfony.com/doc/current/components/css_selector.html#id1
+            https://symfony.com/doc/5.0/components/css_selector.html#id1
     -   question: 'Event Listeners are used for Regrouping multiple listeners inside a single class?'
         answers:
             - { value: "False",  correct: true }
             - { value: "True",   correct: false }
         help: |
-            https://symfony.com/doc/current/event_dispatcher.html#creating-an-event-listener
+            https://symfony.com/doc/5.0/event_dispatcher.html#creating-an-event-listener

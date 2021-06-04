@@ -24,7 +24,7 @@ questions:
             - { value: Symfony\Component\Console\Tester\CommandUnitTester, correct: false }
             - { value: Symfony\Component\Console\Tester\CommandUnit,       correct: false }
         help: |
-            'https://symfony.com/doc/current/console.html#testing-commands'
+            'https://symfony.com/doc/5.0/console.html#testing-commands'
     -   question: 'Using PHPUnit, which method allows to specify a mock response on second call?'
         answers:
             - { value: $mock->expects($this->at(1)),      correct: true }
@@ -49,7 +49,7 @@ questions:
             - { value: phpunit -c,       correct: false }
             - { value: phpunit,          correct: true }
         help: |
-            'https://symfony.com/doc/current/testing.html#unit-tests'
+            'https://symfony.com/doc/5.0/testing.html#unit-tests'
     -   question: 'Where do functional tests live in Symfony (inside a project structure)?'
         answers:
             - { value: Tests/,               correct: false }
@@ -60,7 +60,7 @@ questions:
             - { value: Tests/Controllers/,   correct: false }
             - { value: Controller/,          correct: false }
         help: |
-            'https://symfony.com/doc/current/testing.html#your-first-functional-test'
+            'https://symfony.com/doc/5.0/testing.html#your-first-functional-test'
     -   question: 'Using Symfony\Component\BrowserKit\Client which of these methods can be called?'
         answers:
             - { value: back(),     correct: true }
@@ -81,7 +81,7 @@ questions:
             - { value: 'framework.mailer.dsn: null',        correct: false }
             - { value: 'framework.mailer.dsn: false',        correct: false }
         help: |
-            'https://symfony.com/doc/current/email.html#disabling-sending'
+            'https://symfony.com/doc/5.0/email.html#disabling-sending'
 
     -   question: 'Using the Crawler client, how to follow a redirection ?'
         answers:
@@ -90,4 +90,4 @@ questions:
             - { value: $client->followRedirects(),   correct: true }
             - { value: $client->redirectAll(),       correct: false }
         help: |
-            'followRedirects() is tricky as it will follow ALL redirections. https://symfony.com/doc/current/testing.html#redirecting'
+            'followRedirects() is tricky as it will follow ALL redirections. https://symfony.com/doc/5.0/testing.html#redirecting'

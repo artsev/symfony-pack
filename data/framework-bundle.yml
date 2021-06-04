@@ -16,7 +16,7 @@ questions:
             - { value: "$this->get('session')->getFlashBag()->add('message', 'Some message');", correct: false }
             - { value: "$_SESSION['message'] = 'Some message';", correct: false }
         help: |
-            https://symfony.com/doc/current/controller.html#flash-messages
+            https://symfony.com/doc/5.0/controller.html#flash-messages
             https://github.com/symfony/http-foundation/blob/master/Session/Flash/FlashBag.php
     -   question: |
             Controllers

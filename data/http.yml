@@ -33,7 +33,7 @@ questions:
             - { value: "{$request->query->all()}['foo'];", correct: true }
             - { value: "$request->get('foo');",            correct: true }
         help: |
-            https://symfony.com/doc/current/components/http_foundation.html#accessing-request-data
+            https://symfony.com/doc/5.0/components/http_foundation.html#accessing-request-data
     -   question: 'How to access the `bar` POST parameter from Request object $request ?'
         answers:
             - { value: "$request->query->get('bar');",     correct: false }
@@ -41,7 +41,7 @@ questions:
             - { value: "{$request->query->all()}['baz'];", correct: false }
             - { value: "$request->post('bar');",           correct: false }
         help: |
-            https://symfony.com/doc/current/components/http_foundation.html#accessing-request-data
+            https://symfony.com/doc/5.0/components/http_foundation.html#accessing-request-data
     -   question: 'The method getLanguages() from Request object:'
         answers:
             - { value: 'return the value of the metadata lang',                   correct: false }
@@ -74,7 +74,7 @@ questions:
             - { value: BinaryFileResponse, correct: true }
             - { value: XmlResponse,        correct: false }
         help: |
-            'https://symfony.com/doc/current/components/http_foundation.html#response'
+            'https://symfony.com/doc/5.0/components/http_foundation.html#response'
     -   question: 'Which HTTP status code should be used for a resource that moved temporarily ?'
         answers:
             - { value: 301, correct: false }
@@ -115,14 +115,14 @@ questions:
             - { value: "By using setCodeStatus()",   correct: false }
             - { value: "By using setHttpCode()",   correct: false }
         help: |
-            https://symfony.com/doc/current/components/http_foundation.html#response
+            https://symfony.com/doc/5.0/components/http_foundation.html#response
     -   question: 'To override the 404 error template for HTML page, how should you name the template ?'
         answers:
             - { value: "error404.html.twig",    correct: true }
             - { value: "404.html.twig",   correct: false }
             - { value: "twig.404.html.twig",   correct: false }
         help: |
-            'https://symfony.com/doc/current/controller/error_pages.html#overriding-the-default-error-templates'
+            'https://symfony.com/doc/5.0/controller/error_pages.html#overriding-the-default-error-templates'
     -   question: 'Which of the following HTTP headers can be used by the server to the client to exchange informations about cookies ?'
         answers:
             - { value: 'Cookie', correct: false }
@@ -185,7 +185,7 @@ questions:
             - { value: "FinishRequestEvent", correct: false }
             - { value: "GetResponseEvent", correct: false }
         help: |
-            https://symfony.com/doc/3.4/components/http_kernel.html#creating-an-event-listener
+            https://symfony.com/doc/5.0/components/http_kernel.html#creating-an-event-listener
     -   question: |
             HTTP Expiration Model
             What can happen to an HTTP response whose Cache-Control header value equals private, max-age=120?

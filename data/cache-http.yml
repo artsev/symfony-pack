@@ -7,7 +7,7 @@ questions:
             - { value: <include src="http://..." />,     correct: false }
             - { value: <esi src="http://..." />,         correct: false }
         help: |
-            'https://symfony.com/doc/current/http_cache/esi.html'
+            'https://symfony.com/doc/5.0/http_cache/esi.html'
 
     -   question: 'What is the Twig function to render an ESI?'
         answers:
@@ -16,7 +16,7 @@ questions:
             - { value: esi_render(), correct: false }
             - { value: render_esi(), correct: true }
         help: |
-            'https://symfony.com/doc/current/http_cache/esi.html'
+            'https://symfony.com/doc/5.0/http_cache/esi.html'
 
     -   question: 'Which HTTP headers belong to the expiration cache model?'
         answers:
@@ -26,7 +26,7 @@ questions:
             - { value: Cache-Control, correct: true }
             - { value: Cookie,        correct: false }
         help: |
-            'https://symfony.com/doc/current/http_cache/expiration.html'
+            'https://symfony.com/doc/5.0/http_cache/expiration.html'
     -   question: 'Which HTTP headers belong to the validation cache model?'
         answers:
             - { value: Expires,       correct: false }
@@ -35,7 +35,7 @@ questions:
             - { value: Cache-Control, correct: false }
             - { value: Cookie,        correct: false }
         help: |
-            https://symfony.com/doc/current/http_cache/validation.html
+            https://symfony.com/doc/5.0/http_cache/validation.html
     -   question: 'Which HTTP status code must be returned if the cache is still valid?'
         answers:
             - { value: '304', correct: true }
@@ -48,7 +48,7 @@ questions:
             - { value: "True",     correct: true }
             - { value: "False",    correct: false }
         help: |
-            'https://symfony.com/doc/current/http_cache/esi.html'
+            'https://symfony.com/doc/5.0/http_cache/esi.html'
     -   question: 'According to HTTP/1.1 what is the max value for Expires?'
         answers:
             - { value: "One year", correct: true }
@@ -56,16 +56,29 @@ questions:
             - { value: "One week", correct: false }
             - { value: "There is no limit", correct: false }
         help: |
-            https://symfony.com/doc/current/http_cache/expiration.html#expiration-with-the-expires-header
+            https://symfony.com/doc/5.0/http_cache/expiration.html#expiration-with-the-expires-header
     -   question: 'True or False? You can use both validation and expiration within the same Response.'
         answers:
             - { value: "True",     correct: true }
             - { value: "False",    correct: false }
         help: |
-            'https://symfony.com/doc/current/http_cache/expiration.html'
+            'https://symfony.com/doc/5.0/http_cache/expiration.html'
     -   question: 'True or False? Using ETag saves CPU cycles.'
         answers:
             - { value: "True",     correct: false }
             - { value: "False",    correct: true }
         help: |
-            'https://symfony.com/doc/current/http_cache/validation.html#validation-with-the-etag-header'
+            'https://symfony.com/doc/5.0/http_cache/validation.html#validation-with-the-etag-header'
+    -   question: |
+            HttpKernel
+            Which sentences about AbstractSessionListener::NO_AUTO_CACHE_CONTROL_HEADER are true?
+        answers:
+            - { value: "it's related to session storage strategy", correct: false }
+            - { value: "it's designed to be used as a request header", correct: false }
+            - { value: "it's designed to be used as a response header", correct: false }
+            - { value: "it's related to the no-store property of cache-control", correct: false }
+            - { value: "it's designed to be used as a SessionInterface option", correct: false }
+            - { value: "it's related to the public/private property of cache-control", correct: false }
+            - { value: "it's related to the no-cache property of cache-control", correct: false }
+        help: |
+            https://symfony.com/doc/5.0/http_cache.html
