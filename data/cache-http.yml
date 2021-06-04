@@ -73,9 +73,9 @@ questions:
             HttpKernel
             Which sentences about AbstractSessionListener::NO_AUTO_CACHE_CONTROL_HEADER are true?
         answers:
-            - { value: "it's related to session storage strategy", correct: false }
+            - { value: "it's related to session storage strategy", correct: true }
             - { value: "it's designed to be used as a request header", correct: false }
-            - { value: "it's designed to be used as a response header", correct: false }
+            - { value: "it's designed to be used as a response header", correct: true }
             - { value: "it's related to the no-store property of cache-control", correct: false }
             - { value: "it's designed to be used as a SessionInterface option", correct: false }
             - { value: "it's related to the public/private property of cache-control", correct: false }
