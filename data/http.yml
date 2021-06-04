@@ -208,3 +208,20 @@ questions:
             - { value: 'Permanent redirect', correct: true }
         help: |
             https://tools.ietf.org/html/rfc7538
+    -   question: |
+            Sending the Response
+            What is the aim of the prepare() method in Symfony\Component\HttpFoundation\Response?
+        answers:
+            -   value: |
+                    To tweak the Response to ensure that it is compliant with RFC 2616.
+                correct: false
+            -   value: |
+                    To send the Response to the client.
+                correct: false
+            -   value: |
+                    To convert the Response to a string that is compatible with the HTTP response message format.
+                correct: false
+        help: |
+            http://symfony.com/doc/current/components/http_foundation.html#sending-the-response
+            http://api.symfony.com/3.1/Symfony/Component/HttpFoundation/Response.html#method_prepare
+            https://github.com/symfony/symfony/blob/master/src/Symfony/Component/HttpFoundation/Response.php#L256
