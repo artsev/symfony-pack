@@ -192,15 +192,3 @@ questions:
             - { value: "src/Controller/ExceptionController", correct: false }
         help: |
             'https://symfony.com/doc/current/controller/error_pages.html#overriding-the-default-error-templates'
-
-#    -
-#        question: ''
-#        answers:
-#            - {value: "", correct: }
-#            - {value: "", correct: }
-#            - {value: "", correct: }
-#            - {value: "", correct: }
-#            - {value: "", correct: }
-#        help: |
-#            ''
-

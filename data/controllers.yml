@@ -66,7 +66,6 @@ questions:
                 // ...
             }
 
-
             How my ParamConverter should be configured to match "postSlug" params with "slug" in Post ?
         answers:
             - { value: '@ParamConverter("post", options={"mapping": {"postSlug": "slug"}})', correct: true }

@@ -47,41 +47,16 @@ questions:
     -   question: |
             Directories
             What is the correct option to add other directories in the translator configuration?
+            # config/packages/translation.yaml
+                framework:
+                    translator:
+                        <<....>>:
+                            - '%kernel.project_dir%/translations'
         answers:
-            - { value: |
-                    # config/packages/translation.yaml
-                    framework:
-                        translator:
-                            add_paths:
-                                - '%kernel.project_dir%/translations'
-              , correct: false }
-            - { value: |
-                    # config/packages/translation.yaml
-                    framework:
-                        translator:
-                            paths:
-                                - '%kernel.project_dir%/translations'
-              , correct: true }
-            - { value: |
-                    # config/packages/translation.yaml
-                    framework:
-                        translator:
-                            directories:
-                                - '%kernel.project_dir%/translations'
-              , correct: false }
-            - { value: |
-                    # config/packages/translation.yaml
-                    framework:
-                        translator:
-                            custom_directories:
-                                - '%kernel.project_dir%/translations'
-              , correct: false }
-            - { value: |
-                    # config/packages/translation.yaml
-                    framework:
-                        translator:
-                            custom_paths:
-                                - '%kernel.project_dir%/translations'
-              , correct: false }
+            - { value: 'add_paths', correct: false }
+            - { value: 'paths', correct: true }
+            - { value: 'directories', correct: false }
+            - { value: 'custom_directories', correct: false }
+            - { value: 'custom_paths', correct: false }
         help: |
             https://symfony.com/doc/current/reference/configuration/framework.html#reference-translator-paths
