@@ -165,3 +165,19 @@ questions:
             - { value: 'Iterator', correct: true }
         help: |
             http://php.net/manual/en/reserved.interfaces.php
+    -
+        question: |
+            PHP basic operations
+            What is the output?
+
+            <?php
+            echo 8 + 0x8 + 80 + 0x80;
+            ?>
+        answers:
+            - { value: '224', correct: true }
+            - { value: '88', correct: false }
+            - { value: '96', correct: false }
+            - { value: '156', correct: false }
+        help: |
+            http://php.net/integer
+            https://www.rapidtables.com/convert/number/how-hex-to-decimal.html#:~:text=How%20to%20convert%20from%20hex,with%20its%20power%20of%2010.&text=Hex%20numbers%20are%20read%20the,its%20corresponding%20power%20of%2016.
