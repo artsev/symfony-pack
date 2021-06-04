@@ -214,7 +214,7 @@ questions:
         answers:
             -   value: |
                     To tweak the Response to ensure that it is compliant with RFC 2616.
-                correct: false
+                correct: true
             -   value: |
                     To send the Response to the client.
                 correct: false
