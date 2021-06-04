@@ -181,3 +181,67 @@ questions:
         help: |
             http://php.net/integer
             https://www.rapidtables.com/convert/number/how-hex-to-decimal.html#:~:text=How%20to%20convert%20from%20hex,with%20its%20power%20of%2010.&text=Hex%20numbers%20are%20read%20the,its%20corresponding%20power%20of%2016.
+    -
+        question: |
+            Considering the following PHP script:
+
+            $dom = new DomDocument;
+            $dom->load('test.xml');
+            $xpath = new DomXPath($dom);
+            $nodes = $xpath->query(/* ... */);
+            echo $nodes->item(0)->getAttributeNode('bgcolor')->value;
+
+            What Xpath query should go in the /* ... */ to display the bgcolor attribute of the first body node in the XML Document?
+        answers:
+            - { value: '*[lname()="body"]', correct: false }
+            - { value: '/body[0]/text', correct: false }
+            - { value: '/body/body[0]', correct: true }
+            - { value: '*[local-name()="body"]', correct: false }
+            - { value: 'name="body"', correct: false }
+        help: |
+            http://xmlfr.org/w3c/TR/xpath/
+    -
+        question: |
+            PHP standard input
+            The ??? constant in a CLI script is an automatically provided file resource representing standard input of the terminal.
+        answers:
+            - { value: 'STDIO', correct: false }
+            - { value: 'STDIN', correct: true }
+            - { value: 'PHP::STDIO', correct: false }
+            - { value: '__STDIN__', correct: false }
+            - { value: 'STD_IN', correct: false }
+        help: |
+            http://php.net/manual/en/features.commandline.io-streams.php
+    -
+        question: |
+            Consider the following code snippet:
+
+            function foo(&$a = 8)
+            {
+                $b = &$a;
+                $b -= $a + 3;
+
+                return $b;
+            }
+
+            $a = foo(4);
+            echo $a;
+
+            What will be the outcome of executing this script?
+        answers:
+            - { value: -4, correct: false }
+            - { value: 8, correct: false }
+            - { value: 3, correct: false }
+            - { value: -3, correct: false }
+            - { value: 'A PHP fatal error.', correct: true }
+        help: |
+            http://php.net/manual/en/language.references.php
+    -
+        question: |
+            Which of the following are *not* true about streams?
+        answers:
+            - { value: They can be applied to any data source., correct: false }
+            - { value: They are always seekable., correct: false }
+            - { value: When used properly, they significantly reduce memory consumption., correct: false }
+            - { value: They are always bi-directional., correct: false }
+            - { value: They can be filtered., correct: false }

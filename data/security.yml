@@ -122,9 +122,24 @@ questions:
             - { value: "supportsClass($class)", correct: true }
         help: |
             https://symfony.com/doc/current/security/user_provider.html#creating-a-custom-user-provider
-    -   question: 'Authorization is the process that makes sure that a user is who he claims to be?'
+    -
+        question: |
+            Authorization
+            Authorization is the process that makes sure that a user is who he claims to be?
         answers:
             - { value: 'true', correct: false }
             - { value: 'false', correct: true }
         help: |
             http://symfony.com/doc/current/components/security/authorization.html
+    -
+        question: |
+            Authentication
+            When using HTTP basic, how does the server starts the authentication process?
+        answers:
+            - { value: 'Redirecting the request to the port 443.', correct: false }
+            - { value: 'Sending the status code HTTP 418 Authentication Required.', correct: false }
+            - { value: 'Rendering a login form with the fields _user and _password.', correct: false }
+            - { value: 'Sending the WWW-Authenticate HTTP header with the HTTP 401 Not Authorized status code.', correct: true }
+        help: |
+            https://tools.ietf.org/html/rfc2617#section-2
+            https://en.wikipedia.org/wiki/Basic_access_authentication#Server_side

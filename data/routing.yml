@@ -40,7 +40,9 @@ questions:
             - { value: "$this->generateAbsoluteUrl()", correct: false }
         help: |
             https://symfony.com/doc/current/routing.html#generating-urls-in-controllers
-    -   question: "Consider the following route definition:"
+    -   question: |
+            Route definition
+            Consider the following route definition:
         answers:
             - { value: "http://forum.domain.tld/category/programming/thread-42.html?page=3", correct: true }
             - { value: "http://www.domain.tld/category/73/thread-hello-world.html", correct: false }

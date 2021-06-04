@@ -150,7 +150,9 @@ questions:
             - { value: "services", correct: true }
         help: |
             https://symfony.com/doc/current/service_container/import.html
-    -   question: 'Which configuration format is the most efficient for the container when registering new services?'
+    -   question: |
+            Performance
+            Which configuration format is the most efficient for the container when registering new services?
         answers:
             - { value: "XML", correct: false }
             - { value: "PHP", correct: false }

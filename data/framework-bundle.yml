@@ -7,7 +7,9 @@ questions:
         help: |
             http://symfony.com/doc/current/book/translation.html#configuration
 
-    -   question: "Let's consider a controller making his job. Once the request handled, this controller returns a RedirectResponse in destination to another controller. Let's assume both of the following controllers extend AbstractController class from the Symfony FrameworkBundle. What is the best way for the first controller to send a message to the next one?"
+    -   question: |
+            Message propagation through Http requests
+            Let's consider a controller making his job. Once the request handled, this controller returns a RedirectResponse in destination to another controller. Let's assume both of the following controllers extend AbstractController class from the Symfony FrameworkBundle. What is the best way for the first controller to send a message to the next one?
         answers:
             - { value: "$this->addMessage('info', 'Some message');", correct: false }
             - { value: "$this->addFlash('info', 'Some message');", correct: true }
@@ -16,3 +18,24 @@ questions:
         help: |
             https://symfony.com/doc/current/controller.html#flash-messages
             https://github.com/symfony/http-foundation/blob/master/Session/Flash/FlashBag.php
+    -   question: |
+            Controllers
+            Where is defined the isGranted() method available for any controller?
+        answers:
+            - { value: 'ControllerTrait', correct: false }
+            - { value: 'ServiceContainerAware', correct: false }
+            - { value: 'AbstractController', correct: true }
+            - { value: 'Controller', correct: false }
+        help: |
+            https://github.com/symfony/framework-bundle/blob/5.0/Controller/AbstractController.php
+    -   question: |
+            Dependency Injection Tags
+            What is the tag to register a custom service that loads routes?
+        answers:
+            - { value: 'router.loader', correct: false }
+            - { value: 'routing.loader', correct: true }
+            - { value: 'router.route_loader', correct: false }
+            - { value: 'routing.route_loader', correct: false }
+            - { value: 'router_loader', correct: false }
+        help: |
+            http://symfony.com/doc/current/reference/dic_tags.html#routing-loader
