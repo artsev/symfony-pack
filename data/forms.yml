@@ -255,7 +255,7 @@ questions:
             - { value: 'No', correct: false }
             - { value: 'Yes', correct: true }
         help: |
-            http://symfony.com/doc/current/reference/forms/twig_reference.html#form-end-view-variables
+            http://symfony.com/doc/5.0/reference/forms/twig_reference.html#form-end-view-variables
     -   question: |
             Render
             How can you render a form named form in a Twig template?
@@ -269,5 +269,19 @@ questions:
             - { value: '{{ render_form(form) }}', correct: false }
             - { value: '{% form(form) %}', correct: false }
         help: |
-            http://symfony.com/doc/current/reference/forms/twig_reference.html
-            http://symfony.com/doc/current/book/forms.html
+            http://symfony.com/doc/5.0/reference/forms/twig_reference.html
+            http://symfony.com/doc/5.0/book/forms.html
+    -   question: |
+            NumberType rounding mode.
+            What value should you set to the rounding_mode option of the Symfony\Component\Form\Extension\Core\Type\NumberType form type in order to make the value 3.141 to be normalized as 3.15 and the value -3.141 to be normalized as -3.14; assuming the scale option is set to 2.
+        answers:
+            - { value: 'Symfony\Component\Form\Extension\Core\DataTransformer\NumberToLocalizedStringTransformer::ROUND_HALF_UP', correct: false }
+            - { value: 'Symfony\Component\Form\Extension\Core\DataTransformer\NumberToLocalizedStringTransformer::ROUND_HALF_EVEN', correct: false }
+            - { value: 'Symfony\Component\Form\Extension\Core\DataTransformer\NumberToLocalizedStringTransformer::ROUND_HALF_DOWN', correct: false }
+            - { value: 'Symfony\Component\Form\Extension\Core\DataTransformer\NumberToLocalizedStringTransformer::ROUND_FLOOR', correct: false }
+            - { value: 'Symfony\Component\Form\Extension\Core\DataTransformer\NumberToLocalizedStringTransformer::ROUND_UP', correct: false }
+            - { value: 'Symfony\Component\Form\Extension\Core\DataTransformer\NumberToLocalizedStringTransformer::ROUND_DOWN', correct: false }
+            - { value: 'Symfony\Component\Form\Extension\Core\DataTransformer\NumberToLocalizedStringTransformer::ROUND_CEILING', correct: true }
+        help: |
+            http://symfony.com/doc/5.0/reference/forms/types/number.html
+            http://symfony.com/doc/5.0/reference/forms/types/number.html#rounding-mode

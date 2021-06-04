@@ -68,8 +68,8 @@ questions:
             - { value: "/blog/10/mon-blog-post.xml", correct: false }
             - { value: "/blog/8/my-blog-post.html", correct: true }
         help: |
-            http://symfony.com/doc/current/components/routing/introduction.html#defining-routes
-            http://symfony.com/doc/current/routing.html
+            http://symfony.com/doc/5.0/components/routing/introduction.html#defining-routes
+            http://symfony.com/doc/5.0/routing.html
     -   question: |
             Routing match
             If no methods are specified for a route, what methods will be matched?

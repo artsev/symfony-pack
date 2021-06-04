@@ -5,7 +5,7 @@ questions:
             - { value: No, correct: true }
             - { value: Yes, correct: false }
         help: |
-            http://symfony.com/doc/current/book/translation.html#configuration
+            http://symfony.com/doc/5.0/book/translation.html#configuration
 
     -   question: |
             Message propagation through Http requests
@@ -38,4 +38,4 @@ questions:
             - { value: 'routing.route_loader', correct: false }
             - { value: 'router_loader', correct: false }
         help: |
-            http://symfony.com/doc/current/reference/dic_tags.html#routing-loader
+            http://symfony.com/doc/5.0/reference/dic_tags.html#routing-loader

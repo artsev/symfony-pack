@@ -129,7 +129,7 @@ questions:
             - { value: 'true', correct: false }
             - { value: 'false', correct: true }
         help: |
-            http://symfony.com/doc/current/components/security/authorization.html
+            http://symfony.com/doc/5.0/components/security/authorization.html
     -   question: |
             Authentication
             When using HTTP basic, how does the server starts the authentication process?

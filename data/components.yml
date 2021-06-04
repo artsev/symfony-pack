@@ -22,10 +22,10 @@ questions:
             - { value: 'A Symfony\Component\PropertyAccess\Exception\NoSuchPropertyException will be thrown.', correct: false }
             - { value: 'A Symfony\Component\PropertyAccess\Exception\NoSuchIndexException will be thrown.', correct: true }
         help: |
-            http://symfony.com/doc/current/components/property_access/introduction.html#reading-from-arrays
-            http://symfony.com/doc/current/components/property_access/introduction.html#enable-other-features
+            http://symfony.com/doc/5.0/components/property_access/introduction.html#reading-from-arrays
+            http://symfony.com/doc/5.0/components/property_access/introduction.html#enable-other-features
             https://github.com/symfony/symfony/blob/master/src/Symfony/Component/PropertyAccess/PropertyAccessorBuilder.php#L71
-            http://api.symfony.com/3.1/Symfony/Component/PropertyAccess/PropertyAccessorBuilder.html#method_enableExceptionOnInvalidIndex
+            http://api.symfony.com/5.0/Symfony/Component/PropertyAccess/PropertyAccessorBuilder.html#method_enableExceptionOnInvalidIndex
     -   question: |
             Usage
             What will be displayed by the following code?
@@ -42,8 +42,8 @@ questions:
             - { value: '1 + 2', correct: false }
             - { value: 'false', correct: false }
         help: |
-            http://symfony.com/doc/current/components/expression_language.html#usage
-            http://api.symfony.com/3.1/Symfony/Component/ExpressionLanguage/ExpressionLanguage.html#method_evaluate
+            http://symfony.com/doc/5.0/components/expression_language.html#usage
+            http://api.symfony.com/5.0/Symfony/Component/ExpressionLanguage/ExpressionLanguage.html#method_evaluate
     -   question: |
             Directories
             What is the correct option to add other directories in the translator configuration?
@@ -91,7 +91,7 @@ questions:
             - { value: 'isAsync()', correct: false }
             - { value: 'isStarted()', correct: false }
         help: |
-            http://symfony.com/doc/current/components/process.html#running-processes-asynchronously
+            http://symfony.com/doc/5.0/components/process.html#running-processes-asynchronously
     -   question: |
             Usage
             Which of the following are Filesystem methods?
@@ -103,4 +103,4 @@ questions:
             - { value: 'isAbsolutePath', correct: true }
             - { value: 'remove', correct: true }
         help: |
-            http://symfony.com/doc/current/components/filesystem/introduction.html#usage
+            http://symfony.com/doc/5.0/components/filesystem/introduction.html#usage

@@ -7,4 +7,4 @@ questions:
             - { value: 'Yes', correct: false }
             - { value: 'No', correct: true }
         help: |
-            http://symfony.com/doc/current/contributing/code/bc.html#using-our-interfaces
+            http://symfony.com/doc/5.0/contributing/code/bc.html#using-our-interfaces
