@@ -60,3 +60,47 @@ questions:
             - { value: 'custom_paths', correct: false }
         help: |
             https://symfony.com/doc/current/reference/configuration/framework.html#reference-translator-paths
+    -   question: 'With the Finder, which method is correct to exclude a logs directory from matching ?'
+        answers:
+            - { value: $finder->in(__DIR__)->notMatch('logs');, correct: false }
+            - { value: $finder->in(__DIR__)->ignore('logs');, correct: false }
+            - { value: $finder->in(__DIR__)->excludeDir('logs');, correct: false }
+            - { value: $finder->in(__DIR__)->ignoreFiles('logs');, correct: false }
+            - { value: $finder->in(__DIR__)->ignoreDirectory('logs');, correct: false }
+            - { value: $finder->in(__DIR__)->ignoreDir('logs');, correct: false }
+            - { value: $finder->in(__DIR__)->exclude('logs');, correct: true }
+        help: |
+            https://symfony.com/doc/current/components/finder.html#location
+            http://api.symfony.com/master/Symfony/Component/Finder/Finder.html#method_exclude
+            https://github.com/symfony/finder/blob/master/Finder.php#L297
+    -   question: 'What is the default signal sent by Process component to stop a process ?'
+        answers:
+            - { value: 'SIGINT',         correct: false }
+            - { value: 'SIGKILL',        correct: true }
+            - { value: 'Process::STOP',  correct: false }
+            - { value: '9',              correct: true }
+        help: |
+            https://symfony.com/doc/current/components/process.html#stopping-a-process
+            https://www.computerhope.com/unix/signals.htm#system-specific
+    -   question: |
+            Running Processes Asynchronously
+            While running a process asynchronously, which method would you use to check if the process is done?
+        answers:
+            - { value: 'isRunning()', correct: true }
+            - { value: 'isProcessing()', correct: false }
+            - { value: 'isAsync()', correct: false }
+            - { value: 'isStarted()', correct: false }
+        help: |
+            http://symfony.com/doc/current/components/process.html#running-processes-asynchronously
+    -   question: |
+            Usage
+            Which of the following are Filesystem methods?
+        answers:
+            - { value: 'move', correct: false }
+            - { value: 'symlink', correct: true }
+            - { value: 'exists', correct: true }
+            - { value: 'makePathRelative', correct: true }
+            - { value: 'isAbsolutePath', correct: true }
+            - { value: 'remove', correct: true }
+        help: |
+            http://symfony.com/doc/current/components/filesystem/introduction.html#usage
