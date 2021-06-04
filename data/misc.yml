@@ -41,7 +41,7 @@ questions:
             - { value: "UrlGenerator.php",    correct: true }
         help:
             https://symfony.com/doc/current/configuration/front_controllers_and_kernel.html#environments-and-the-cache-directory
-    - # https://github.com/symfony/error-handler/blob/master/Debug.php is not in the Debug NS anymore, now in Component/ErrorHandler
+    -
         question: 'Using Symfony\Component\ErrorHandler\Debug static class, what is the only method available?'
         answers:
             - { value: "public static function enable()", correct: true }
@@ -51,9 +51,6 @@ questions:
             - { value: "public static function register()",  correct: false }
         help: |
             https://github.com/symfony/symfony/blob/master/src/Symfony/Component/ErrorHandler/Debug.php
-
-        # https://github.com/symfony/error-handler/blob/master/ErrorHandler.php is not in the Debug NS anymore, now in Component/ErrorHandler
-        # also, register() doesnt seem to be the only method available ?
     -   question: 'Using Symfony\Component\ErrorHandler\ErrorHandler static class, what is the only method available?'
         answers:
             - { value: "public static function enable(self $handler = null, bool $replace = true)", correct: false }
