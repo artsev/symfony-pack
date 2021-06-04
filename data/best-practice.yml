@@ -4,7 +4,7 @@ questions:
             BC promise
             Do all Symfony Interfaces honor BC promise?
         answers:
-          { -   value: 'Yes', correct: false }
-            { -   value: 'No', correct: true }
+            - { value: 'Yes', correct: false }
+            - { value: 'No', correct: true }
         help: |
             http://symfony.com/doc/current/contributing/code/bc.html#using-our-interfaces
