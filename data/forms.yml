@@ -285,3 +285,21 @@ questions:
         help: |
             http://symfony.com/doc/5.0/reference/forms/types/number.html
             http://symfony.com/doc/5.0/reference/forms/types/number.html#rounding-mode
+    -   question: |
+            Form Events
+            Which method should you use to register a new event listener on a FormBuilder instance?
+        answers:
+            -   value: |
+                    registerListener
+                correct: false
+            -   value: |
+                    addEventListener
+                correct: true
+            -   value: |
+                    addListener
+                correct: false
+            -   value: |
+                    createListener
+                correct: false
+        help: |
+            http://symfony.com/doc/current/components/form/form_events.html
