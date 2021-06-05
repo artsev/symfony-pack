@@ -24,7 +24,7 @@ questions:
         help: |
             http://symfony.com/doc/5.0/components/property_access/introduction.html#reading-from-arrays
             http://symfony.com/doc/5.0/components/property_access/introduction.html#enable-other-features
-            https://github.com/symfony/symfony/blob/master/src/Symfony/Component/PropertyAccess/PropertyAccessorBuilder.php#L71
+            https://github.com/symfony/symfony/blob/5.0/src/Symfony/Component/PropertyAccess/PropertyAccessorBuilder.php#L71
             http://api.symfony.com/5.0/Symfony/Component/PropertyAccess/PropertyAccessorBuilder.html#method_enableExceptionOnInvalidIndex
     -   question: |
             Usage

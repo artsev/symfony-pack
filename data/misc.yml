@@ -50,7 +50,7 @@ questions:
             - { value: "public static function start()",  correct: false }
             - { value: "public static function register()",  correct: false }
         help: |
-            https://github.com/symfony/symfony/blob/master/src/Symfony/Component/ErrorHandler/Debug.php
+            https://github.com/symfony/symfony/blob/5.0/src/Symfony/Component/ErrorHandler/Debug.php
     -   question: 'Using Symfony\Component\ErrorHandler\ErrorHandler static class, what is the only method available?'
         answers:
             - { value: "public static function enable(self $handler = null, bool $replace = true)", correct: false }

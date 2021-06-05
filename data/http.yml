@@ -49,7 +49,7 @@ questions:
             - { value: 'return an array of languages the client accepts',         correct: true }
             - { value: 'does not exists',                                         correct: false }
         help: |
-            https://github.com/symfony/symfony/blob/master/src/Symfony/Component/HttpFoundation/Request.php#L1653
+            https://github.com/symfony/symfony/blob/5.0/src/Symfony/Component/HttpFoundation/Request.php#L1653
     -   question: 'How to get the Content Type from Request ?'
         answers:
             - { value: "$request->headers->get('content_type');", correct: true }
@@ -224,4 +224,49 @@ questions:
         help: |
             http://symfony.com/doc/5.0/components/http_foundation.html#sending-the-response
             http://api.symfony.com/5.0/Symfony/Component/HttpFoundation/Response.html#method_prepare
-            https://github.com/symfony/symfony/blob/master/src/Symfony/Component/HttpFoundation/Response.php#L256
+            https://github.com/symfony/symfony/blob/5.0/src/Symfony/Component/HttpFoundation/Response.php#L256
+    -   question: |
+            Request Structure
+            What is the request structure ?
+        answers:
+            -   value: |
+                    Request-Line Headers CRLF Body
+                correct: false
+            -   value: |
+                    Request-Line
+
+                    Headers
+
+                    Body
+                correct: false
+            -   value: |
+                    Request-Line CRLF Headers CRLF CRLF Body
+                correct: false
+            -   value: |
+                    Request-Line Headers CRLF CRLF Body
+                correct: true
+        help: |
+            https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html
+
+    -   question: |
+            Status code
+            What is the status code for Gone?
+        answers:
+            -   value: |
+                    411
+                correct: false
+            -   value: |
+                    403
+                correct: false
+            -   value: |
+                    409
+                correct: false
+            -   value: |
+                    404
+                correct: false
+            -   value: |
+                    410
+                correct: true
+        help: |
+            https://tools.ietf.org/html/rfc2616#section-10.4.11
+

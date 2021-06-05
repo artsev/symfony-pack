@@ -263,9 +263,68 @@ questions:
         help: |
             https://php.net/array
             https://php.net/manual/en/function.array-intersect-assoc.php
+    -   question: |
+            PHP Basics
+            Is the following code correct ?
 
+            trait MyTrait
+            {
+              private $myVar = 'myvar';
 
+              public function getVar(): string
+              {
+                return $this->myVar;
+              }
 
+              abstract function setVar();
+            }
 
+            class Foo
+            {
+              use MyTrait;
 
+              public function setVar(string $var)
+              {
+                $this->myVar = $var;
+              }
+            }
+        answers:
+            -   value: |
+                    Yes
+                correct: true
+            -   value: |
+                    No
+                correct: false
+        help: |
+            https://www.php.net/manual/en/language.oop5.traits.php
 
+    -   question: |
+            Predefined variables
+            From which global arrays is it possible to read submitted form data?
+        answers:
+            -   value: |
+                    $_REQUEST
+                correct: true
+            -   value: |
+                    $_ENV
+                correct: false
+            -   value: |
+                    $_SESSION
+                correct: false
+            -   value: |
+                    $_GET
+                correct: true
+            -   value: |
+                    $_POST
+                correct: true
+            -   value: |
+                    $_COOKIE
+                correct: false
+        help: |
+            https://www.ostraining.com/blog/coding/retrieve-html-form-data-with-php/
+            http://php.net/manual/en/reserved.variables.get.php
+            http://php.net/manual/en/reserved.variables.post.php
+            http://php.net/manual/en/reserved.variables.session.php
+            http://php.net/manual/en/reserved.variables.request.php
+            http://php.net/manual/en/reserved.variables.environment.php
+            http://php.net/manual/en/reserved.variables.cookies.php
