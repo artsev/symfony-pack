@@ -1,1 +1,20 @@
 category: Bonus
+questions:
+    -
+        question: |
+            Template
+        answers:
+            -   value: |
+                    Value
+                correct: true
+            -   value: |
+                    Value
+                correct: true
+            -   value: |
+                    Value
+                correct: true
+            -   value: |
+                    Value
+                correct: true
+        help: |
+            Help
