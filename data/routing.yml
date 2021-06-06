@@ -43,6 +43,19 @@ questions:
     -   question: |
             Route definition
             Consider the following route definition:
+
+            <!-- config/routes.xml -->
+            <?xml version="1.0" encoding="UTF-8" ?>
+            <routes ...>
+                <route id="forum_thread"
+                    path="/category/{slug}/thread-{id}.html"
+                    methods="GET"
+                    host="forum.domain.tld"
+                    controller="App\Controller\ForumController::thread">
+                </route>
+            </routes>
+
+            Which of the following URL patterns will match the forum_thread route?
         answers:
             - { value: "http://forum.domain.tld/category/programming/thread-42.html?page=3", correct: true }
             - { value: "http://www.domain.tld/category/73/thread-hello-world.html", correct: false }
