@@ -39,6 +39,9 @@ questions:
             - { value: 'access_control: { path: ^/secure, use_https: true }', correct: false }
             - { value: 'access_control: { path: ^/secure, always_use_https: true }', correct: false }
             - { value: 'access_control: { path: ^/secure, schemes: [https] }', correct: false }
+        help: |
+            https://symfony.com/doc/5.0/security/access_control.html#forcing-a-channel-http-https
+
     -   question: 'What is the purpose of security encoders in security.yml?'
         answers:
             - { value: 'Encode user passwords using given algorithm', correct: true }
