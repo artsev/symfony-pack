@@ -68,7 +68,8 @@ questions:
             - { value: "True",     correct: false }
             - { value: "False",    correct: true }
         help: |
-            'https://symfony.com/doc/5.0/http_cache/validation.html#validation-with-the-etag-header'
+            This algorithm is simple enough and very generic, but you need to create the whole Response before being able to compute the ETag, which is sub-optimal. In other words, it saves on bandwidth, but not CPU cycles.
+            https://symfony.com/doc/5.0/http_cache/validation.html#validation-with-the-etag-header
     -   question: |
             HttpKernel
             Which sentences about AbstractSessionListener::NO_AUTO_CACHE_CONTROL_HEADER are true?

@@ -16,7 +16,7 @@ questions:
             - { value: $response->getRevalidated(),    correct: false }
             - { value: $response->mustBeRevalidated(), correct: false }
         help: |
-            https://github.com/symfony/symfony/blob/5.1/src/Symfony/Component/HttpFoundation/Response.php
+            https://github.com/symfony/symfony/blob/5.0/src/Symfony/Component/HttpFoundation/Response.php
     -   question: 'Using a Response instance, which of these methods are available to check status code?'
         answers:
             - { value: $response->isInformational(), correct: true }
@@ -25,7 +25,7 @@ questions:
             - { value: $response->isInvalid(),       correct: true }
             - { value: $response->isError(),         correct: false }
         help: |
-            https://github.com/symfony/symfony/blob/5.1/src/Symfony/Component/HttpFoundation/Response.php
+            https://github.com/symfony/symfony/blob/5.0/src/Symfony/Component/HttpFoundation/Response.php
     -   question: 'How to access the `foo` GET parameter from Request object $request ?'
         answers:
             - { value: "$request->query->get('foo');",     correct: true }
@@ -50,23 +50,23 @@ questions:
             - { value: 'does not exists',                                         correct: false }
         help: |
             https://github.com/symfony/symfony/blob/5.0/src/Symfony/Component/HttpFoundation/Request.php#L1653
-    -   question: 'How to get the Content Type from Request ?'
+    -   question: 'How to get the Content Type from Request?'
         answers:
             - { value: "$request->headers->get('content_type');", correct: true }
             - { value: "$request->headers->get('content-type');", correct: true }
             - { value: "$request->headers->get('Content-Type');", correct: true }
             - { value: "$request->getContentType();",             correct: true }
         help: |
-            'headers are not case sensitive https://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.2
-             underscore are legals but with issues https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/?highlight=disappearing%20http%20headers#missing-disappearing-http-headers
-             getContentType() exist https://github.com/symfony/symfony/blob/5.1/src/Symfony/Component/HttpFoundation/Request.php'
+            https://symfony.com/doc/5.0/components/http_foundation.html
+            Field names are case-insensitive: https://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.2
+            getContentType() exists: https://github.com/symfony/symfony/blob/5.0/src/Symfony/Component/HttpFoundation/Request.php#L1380
     -   question: 'How to check if a request has been sent using AJAX ?'
         answers:
             - { value: $request->isXmlHttpRequest();,                                   correct: true }
             - { value: $request->isAJAX();,                                             correct: false }
             - { value: "$this->headers->get('X-Requested-With') === 'XMLHttpRequest';", correct: true }
         help: |
-            https://github.com/symfony/symfony/blob/5.1/src/Symfony/Component/HttpFoundation/Request.php
+            https://github.com/symfony/symfony/blob/5.0/src/Symfony/Component/HttpFoundation/Request.php
     -   question: 'Which Response subclasses are available?'
         answers:
             - { value: JsonResponse,       correct: true }
@@ -107,7 +107,7 @@ questions:
             - { value: "getUrl",   correct: false }
             - { value: "getUri",   correct: true }
         help: |
-            https://github.com/symfony/symfony/blob/5.1/src/Symfony/Component/HttpFoundation/Request.php
+            https://github.com/symfony/symfony/blob/5.0/src/Symfony/Component/HttpFoundation/Request.php
     -   question: 'How can you set status code of Symfony\Component\HttpFoundation\Response'
         answers:
             - { value: "By you pass the value as second parameter of new Response()",    correct: true }
