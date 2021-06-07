@@ -66,7 +66,7 @@ questions:
         answers:
             - { value: 'Access is granted as soon as there is one voter granting access', correct: true }
             - { value: 'Access is granted if there are more voters granting access than denying', correct: false }
-            - { value: 'Access is granted if all voters grant acces', correct: false }
+            - { value: 'Access is granted if all voters grant access', correct: false }
             - { value: 'Access is granted if no voters throw an exception', correct: false }
         help: |
             https://symfony.com/doc/5.0/components/security/authorization.html#access-decision-manager
@@ -74,7 +74,7 @@ questions:
         answers:
             - { value: 'Access is granted as soon as there is one voter granting access', correct: false }
             - { value: 'Access is granted if there are more voters granting access than denying', correct: true }
-            - { value: 'Access is granted if all voters grant acces', correct: false }
+            - { value: 'Access is granted if all voters grant access', correct: false }
             - { value: 'Access is granted if no voters throw an exception', correct: false }
         help: |
             https://symfony.com/doc/5.0/components/security/authorization.html#access-decision-manager
@@ -82,7 +82,7 @@ questions:
         answers:
             - { value: 'Access is granted as soon as there is one voter granting access', correct: false }
             - { value: 'Access is granted if there are more voters granting access than denying', correct: false }
-            - { value: 'Access is granted if all voters grant acces', correct: true }
+            - { value: 'Access is granted if all voters grant access', correct: true }
             - { value: 'Access is granted if no voters throw an exception', correct: false }
         help: |
             https://symfony.com/doc/5.0/components/security/authorization.html#access-decision-manager
