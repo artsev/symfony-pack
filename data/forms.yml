@@ -215,7 +215,7 @@ questions:
             - { value: "FloatType",  correct: false }
             - { value: "BooleanType",  correct: false }
         help: |
-            https://github.com/symfony/symfony/tree/master/src/Symfony/Component/Form/Extension/Core/Type
+            https://github.com/symfony/symfony/tree/5.0/src/Symfony/Component/Form/Extension/Core/Type
     -   question: 'How to Disable the Validation of Submitted Data'
         answers:
             - { value: "set the validation_groups option to false", correct: true }
