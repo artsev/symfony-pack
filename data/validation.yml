@@ -52,7 +52,7 @@ questions:
             - { value: "SameAs", correct: false }
         help: |
             https://symfony.com/doc/5.0/reference/constraints.html
-    -   question: 'Which annotation are valid ?'
+    -   question: 'Which annotations are valid ?'
         answers:
             - { value: '@Assert\Choice({"male", "female", "other"})', correct: true }
             - { value: '@Assert\Choice(choices = {"male", "female", "other"})', correct: true }
