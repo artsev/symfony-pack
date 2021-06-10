@@ -225,7 +225,7 @@ questions:
             - { value: "By using false as third parameter for createFormBuilder", correct: false }
         help: |
             https://symfony.com/doc/5.0/form/disabling_validation.html
-    -   question: 'Which form event dont exist?'
+    -   question: 'Which form event doesnt exist?'
         answers:
             - { value: "FormEvents::PRE_SET_DATA", correct: false }
             - { value: "FormEvents::SUBMIT", correct: false }
