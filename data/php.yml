@@ -129,7 +129,7 @@ questions:
             - { value: "True",    correct: false }
             - { value: "False",   correct: true }
         help: |
-            http://php.net/manual/en/language.oop5.basic.php#example-179
+            https://www.php.net/manual/en/language.oop5.basic.php#example-4
     -   question: 'In a class, "public $var4 = self::myStaticMethod();" is a valid property declaration ?'
         answers:
             - { value: "True",    correct: false }
