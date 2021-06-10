@@ -1,4 +1,4 @@
-category: Forms
+category: forms
 questions:
     -   question: 'Inside a form type, how to render a DateType field in an text input field?'
         answers:

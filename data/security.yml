@@ -1,4 +1,4 @@
-category: Security
+category: security
 questions:
     -   question: 'Which line is correct to add a security.access_control line?'
         answers:

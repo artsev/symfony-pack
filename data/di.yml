@@ -1,4 +1,4 @@
-category: Dependency Injection
+category: di
 questions:
     -   question: 'Which line allows to inject the my.custom.service?'
         answers:

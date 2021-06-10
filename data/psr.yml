@@ -1,4 +1,4 @@
-category: PHP Standards Recommendations
+category: psr
 questions:
     -   question: 'Psr-3 LoggerInterface exposes eight methods to write logs to the eight RFC 5424 levels, which level does not exist ?'
         answers:

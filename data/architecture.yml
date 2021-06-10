@@ -1,4 +1,4 @@
-category: Architecture
+category: architecture
 questions:
     -   question: 'What is the path to set session cookie_lifetime parameter in a project configuration?'
         answers:

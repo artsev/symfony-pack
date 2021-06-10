@@ -1,4 +1,4 @@
-category: FrameworkBundle
+category: framework
 questions:
     -   question: 'Is the translation activated by default?'
         answers:

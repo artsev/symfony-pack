@@ -1,4 +1,4 @@
-category: Routing
+category: routing
 questions:
     -   question: 'Using XML or YAML, how to declare a route for a specific domain/host?'
         answers:

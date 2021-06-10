@@ -1,4 +1,4 @@
-category: Controllers
+category: controllers
 questions:
     -   question: 'How to perform a redirection on example.org in a controller?'
         answers:

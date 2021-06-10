@@ -1,4 +1,4 @@
-category: Miscellaneous
+category: misc
 questions:
     -   question: 'Which controller/action allows to render a template without a specific controller?'
         answers:
@@ -84,3 +84,45 @@ questions:
             - { value: "True",   correct: false }
         help: |
             https://symfony.com/doc/5.0/event_dispatcher.html#creating-an-event-listener
+    -   question: |
+            BC promise
+            Do all Symfony Interfaces honor BC promise?
+        answers:
+            - { value: 'Yes', correct: false }
+            - { value: 'No', correct: true }
+        help: |
+            http://symfony.com/doc/5.0/contributing/code/bc.html#using-our-interfaces
+    -   question: |
+            Binding Types
+            Will this prepared statement work?
+
+            $stmt = $conn->executeQuery(
+                'SELECT * FROM user WHERE id IN (?)',
+                [[1, 2, 3, 4, 5, 6]],
+                [\Doctrine\DBAL\Connection::PARAM_INT_ARRAY]
+            );
+            $users = $stmt->fetchAll();
+        answers:
+            - { value: 'Yes', correct: true }
+            - { value: 'No', correct: false }
+        help: |
+            The $types variable contains the PDO or Doctrine Type constants.
+            http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/data-retrieval-and-manipulation.html#executequery
+    -   question: 'Using Console, what is the correct filename for a command?'
+        answers:
+            - { value: "MyTestCommand.php",        correct: true }
+            - { value: "CommandMyTest.php",        correct: false }
+            - { value: "MyTestConsoleCommand.php", correct: true }
+            - { value: "MyTestCommandConsole.php", correct: false }
+    -   question: |
+            What can be placed in ????? to be valid?
+
+              use Symfony\Component\Yaml\Yaml;
+
+              $value = Yaml::parse(?????);
+        answers:
+            - { value: '"/path/to/file.yml"',                    correct: false }
+            - { value: 'file_get_contents("/path/to/file.yml")', correct: true }
+            - { value: 'Both are valid',                         correct: false }
+        help: |
+            https://symfony.com/doc/5.0/components/yaml.html#reading-yaml-contents

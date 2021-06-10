@@ -1,4 +1,4 @@
-category: Validation
+category: validation
 questions:
     -   question: 'In order to use validation group, which interface will you implement on your object?'
         answers:

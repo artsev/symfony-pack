@@ -1,4 +1,4 @@
-category: HTTP
+category: http
 questions:
     -   question: 'Which of these HTTP headers does not exist?'
         answers:
