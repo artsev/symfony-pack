@@ -35,11 +35,11 @@ questions:
             https://symfony.com/doc/5.0/logging.html#logging-a-message
     -   question: 'Using a dev environment, what is the correct cached file name of the generated configuration routes?'
         answers:
-            - { value: "appDevUrlGenerator.php", correct: false }
+            - { value: "appDevUrlGenerator.php", correct: true }
             - { value: "appDevGeneratorUrl.php", correct: false }
             - { value: "appDevUrlDump.php",      correct: false }
-            - { value: "UrlGenerator.php",    correct: true }
-        help:
+            - { value: "UrlGenerator.php",    correct: false }
+        help: |
             https://symfony.com/doc/5.0/configuration/front_controllers_and_kernel.html#environments-and-the-cache-directory
     -
         question: 'Using Symfony\Component\ErrorHandler\Debug static class, what is the only method available?'
