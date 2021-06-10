@@ -60,7 +60,7 @@ questions:
             - { value: "public static function register(self $handler = null, bool $replace = true)",  correct: true }
         help: |
             https://github.com/symfony/error-handler
-    -   question: 'In order to be able to use render_hinclude(url(...)), we need to add this configuration in ``framework` section:'
+    -   question: 'In order to be able to use render_hinclude(url(...)), we need to add this configuration in `framework` section:'
         answers:
             - { value: 'hinclude: enabled',             correct: false }
             -   value: |
