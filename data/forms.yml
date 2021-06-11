@@ -131,7 +131,7 @@ questions:
             - { value: "CurrencyType", correct: false }
             - { value: "TextareaType", correct: true }
             - { value: "UrlType",  correct: true }
-            - { value: "Password",  correct: true }
+            - { value: "PasswordType",  correct: true }
             - { value: "EmailType",  correct: true }
         help: |
             https://symfony.com/doc/5.0/reference/forms/types.html#text-fields
