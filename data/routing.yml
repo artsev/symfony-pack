@@ -91,3 +91,15 @@ questions:
             - { value: "Any methods", correct: true }
             - { value: "GET or POST", correct: false }
             - { value: "GET", correct: false }
+    -   question: |
+            Loading routes
+            Is it possible to load routes from a file?
+        answers:
+            -   value: |
+                    Yes
+                correct: true
+            -   value: |
+                    No
+                correct: false
+        help: |
+            https://symfony.com/doc/3.0/components/routing.html#load-routes-from-a-file

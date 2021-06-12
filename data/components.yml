@@ -129,3 +129,114 @@ questions:
             - { value: Symfony\Component\Config\Definition\Builder\Builder,          correct: false }
         help: |
             https://symfony.com/doc/5.0/components/config/definition.html#defining-a-hierarchy-of-configuration-values-using-the-treebuilder
+    -   question: |
+            Exception
+            Which exception is thrown with the Symfony\Component\Finder\Finder::in method if one of the directories does not exist ?
+        answers:
+            -   value: |
+                    FileException
+                correct: false
+            -   value: |
+                    invalidException
+                correct: false
+            -   value: |
+                    InvalidArgumentException
+                correct: true
+            -   value: |
+                    InvalidOptionException
+                correct: false
+            -   value: |
+                    FileNotFoundException
+                correct: false
+        help: |
+            http://api.symfony.com/5.0/Symfony/Component/Finder/Finder.html#method_in
+    -   question: |
+            setDefault with callable
+            With the following code:
+
+            <?php
+            // ...
+            class Mailer
+            {
+                // ...
+                public function configureOptions(OptionsResolver $resolver)
+                {
+                    // ...
+                    $resolver->setDefault('encryption', null);
+
+                    $resolver->setDefault('port', function () {
+                        if ('ssl' === $options['encryption']) {
+                            return 465;
+                        }
+
+                        return 25;
+                    });
+                }
+            }
+
+            what would be the resolved $options passed as:
+
+            $options = array('encryption' => 'SSL');
+        answers:
+            -   value: |
+                    $options = array(
+                        'encryption' => 'SSL',
+                        'port' => null,
+                    );
+                correct: false
+            -   value: |
+                    $options = array(
+                        'encryption' => 'SSL',
+                        'port' => 465,
+                    );
+                correct: false
+            -   value: |
+                    $options = array(
+                        'encryption' => 'SSL',
+                        'port' => function () {
+                                if ('ssl' === $options['encryption']) {
+                                    return 465;
+                                }
+
+                                return 25;
+                            },
+                    );
+                correct: true
+            -   value: |
+                    $options = array(
+                        'encryption' => 'SSL',
+                        'port' => 25,
+                    );
+                correct: false
+        help: |
+            http://symfony.com/doc/5.0/components/options_resolver.html#default-values-that-depend-on-another-option
+    -   question: |
+            Sub Requests
+            What is a sub request?
+        answers:
+            -   value: |
+                    A sub request is a request used in tests.
+                correct: false
+            -   value: |
+                    A sub request serves to render just one small portion of a page instead of a full page.
+                correct: true
+            -   value: |
+                    A sub request serves to create HTTP cache headers.
+                correct: false
+            -   value: |
+                    A sub request is a request from a HTTP reverse proxy.
+                correct: false
+        help: |
+            http://symfony.com/doc/5.0/components/http_kernel.html#sub-requests
+    -   question: |
+            Process timeout
+            Is it possible to limit the amount of time a process takes to complete?
+        answers:
+            -   value: |
+                    Yes
+                correct: true
+            -   value: |
+                    No
+                correct: false
+        help: |
+            http://symfony.com/doc/5.0/components/process.html#process-timeout

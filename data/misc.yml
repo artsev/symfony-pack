@@ -193,3 +193,21 @@ questions:
             https://twig.symfony.com/doc/2.x/templates.html#variables
             https://twig.symfony.com/doc/2.x/api.html#environment-options
             https://github.com/twigphp/Twig/blob/1.x/lib/Twig/Extension/Core.php#L1447-L1479
+    -   question: |
+            PHP constant
+            What is the correct way to display the value of a PHP constant?
+        answers:
+            -   value: |
+                    {{ Namespace\\Classname::CONSTANT_NAME }}
+                correct: false
+            -   value: |
+                    {{ Namespace\Classname::CONSTANT_NAME }}
+                correct: false
+            -   value: |
+                    {{ constant('Namespace\\Classname::CONSTANT_NAME') }}
+                correct: true
+            -   value: |
+                    {{ constant('Namespace\Classname::CONSTANT_NAME') }}
+                correct: false
+        help: |
+            http://twig.sensiolabs.org/doc/functions/constant.html

@@ -303,3 +303,33 @@ questions:
                 correct: false
         help: |
             http://symfony.com/doc/5.0/components/form/form_events.html
+    -   question: |
+            BirthdayType parent.
+            Which of the following form types is the parent of the Symfony\Component\Form\Extension\Core\Type\BirthdayType form type?
+        answers:
+            -   value: |
+                    Symfony\Component\Form\Extension\Core\Type\DateType
+                correct: true
+            -   value: |
+                    Symfony\Component\Form\Extension\Core\Type\DateTimeType
+                correct: false
+            -   value: |
+                    Symfony\Component\Form\Extension\Core\Type\TimeType
+                correct: false
+        help: |
+            http://symfony.com/doc/5.0/reference/forms/types/birthday.html
+    -   question: |
+            UrlType value prepending
+            What is the use of the default_protocol option of the Symfony\Component\Form\Extension\Core\Type\UrlType form type ?
+        answers:
+            -   value: |
+                    To force the submitted value to begin with a given URI scheme (eg. http://).
+                correct: false
+            -   value: |
+                    To render the input with the placeholder property containing the value of the option.
+                correct: false
+            -   value: |
+                    To prepend the submitted value with an URI scheme (eg. http://) if it does not begin with one.
+                correct: true
+        help: |
+            http://symfony.com/doc/5.0/reference/forms/types/url.html

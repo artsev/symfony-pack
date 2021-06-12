@@ -91,3 +91,21 @@ questions:
             - { value: $client->redirectAll(),       correct: false }
         help: |
             'followRedirects() is tricky as it will follow ALL redirections. https://symfony.com/doc/5.0/testing.html#redirecting'
+    -   question: |
+            PHPUnit
+            Which is the method that allows to execute some code after each test defined by a class?
+        answers:
+            -   value: |
+                    protected static function tearDown()
+                correct: false
+            -   value: |
+                    protected function tearDown()
+                correct: true
+            -   value: |
+                    protected static function tearDownAfterClass()
+                correct: false
+            -   value: |
+                    protected function tearDownAfterClass()
+                correct: false
+        help: |
+            https://phpunit.de/manual/current/en/fixtures.html#fixtures.more-setup-than-teardown

@@ -144,3 +144,15 @@ questions:
         help: |
             https://tools.ietf.org/html/rfc2617#section-2
             https://en.wikipedia.org/wiki/Basic_access_authentication#Server_side
+    -   question: |
+            Check_path
+            Should the check_path route be behind a firewall ?
+        answers:
+            -   value: |
+                    No
+                correct: false
+            -   value: |
+                    yes
+                correct: true
+        help: |
+            https://symfony.com/doc/5.0/reference/configuration/security.html#check-path

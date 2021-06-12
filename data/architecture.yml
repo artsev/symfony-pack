@@ -231,3 +231,34 @@ questions:
             - { value: 'router_loader', correct: false }
         help: |
             http://symfony.com/doc/5.0/reference/dic_tags.html#routing-loader
+    -   question: |
+            Console
+            How is it possible to generate absolute URLs from the Console?
+        answers:
+            -   value: |
+                    By overloading the parameter router.request_context.host in the configuration.
+                correct: true
+            -   value: |
+                    By specifying the host parameter in the Twig function url().
+                correct: false
+            -   value: |
+                    The host is automatically known by Symfony, there is no need to specify it in CLI.
+                correct: false
+            -   value: |
+                    By running
+                    $this->getContainer()->get('router')->getContext()->setHost('example.org');
+                correct: true
+        help: |
+            https://symfony.com/doc/5.0/routing.html#generating-urls-in-commands
+    -   question: |
+            Controller
+            Can you use the Symfony\Bundle\FrameworkBundle\Controller\Controller::render() method with an existing Response?
+        answers:
+            -   value: |
+                    Yes
+                correct: true
+            -   value: |
+                    No
+                correct: false
+        help: |
+            https://github.com/symfony/symfony/blob/5.0/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php#L255

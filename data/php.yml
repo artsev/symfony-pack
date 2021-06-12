@@ -328,3 +328,22 @@ questions:
             http://php.net/manual/en/reserved.variables.request.php
             http://php.net/manual/en/reserved.variables.environment.php
             http://php.net/manual/en/reserved.variables.cookies.php
+    -   question: |
+            PSR-4
+            What is true about the PSR-4: Autoloader?
+        answers:
+            -   value: |
+                    The autoloader can throw exceptions.
+                correct: false
+            -   value: |
+                    The terminating class name corresponds to a file name ending in .php
+                correct: true
+            -   value: |
+                    The autoloader can raise errors of any level.
+                correct: false
+            -   value: |
+                    Underscores have no special meaning in any portion of the fully qualified class name.
+                correct: true
+        help: |
+            Autoloader implementations MUST NOT throw exceptions, MUST NOT raise errors of any level, and SHOULD NOT return a value.
+            https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md

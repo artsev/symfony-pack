@@ -269,4 +269,45 @@ questions:
                 correct: true
         help: |
             https://tools.ietf.org/html/rfc2616#section-10.4.11
-
+    -   question: |
+            Status code
+            What is the status code for Gone?
+        answers:
+            -   value: |
+                    403
+                correct: false
+            -   value: |
+                    404
+                correct: false
+            -   value: |
+                    410
+                correct: true
+            -   value: |
+                    411
+                correct: false
+            -   value: |
+                    409
+                correct: false
+        help: |
+            https://tools.ietf.org/html/rfc2616#section-10.4.11
+    -   question: |
+            Status code
+            What are the HTTP status codes for Server Error?
+        answers:
+            -   value: |
+                    4xx
+                correct: false
+            -   value: |
+                    1xx
+                correct: false
+            -   value: |
+                    5xx
+                correct: true
+            -   value: |
+                    3xx
+                correct: false
+            -   value: |
+                    2xx
+                correct: false
+        help: |
+            https://tools.ietf.org/html/rfc2616#section-6.1.1
