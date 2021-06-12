@@ -73,7 +73,7 @@ questions:
             - { value: "proxies_trusted", correct: false }
             - { value: "proxies",         correct: false }
             - { value: "proxies_list",    correct: false }
-            - { value: "setTrustedProxies",    correct: false }
+            - { value: "setTrustedProxies",    correct: true }
         help: |
             trusted_proxies was removed in 3.3, method setTrustedProxies now used https://symfony.com/doc/5.0/reference/configuration/framework.html#trusted-proxies
     -   question: 'Using FrameworkBundle configuration, what is the default framework.assets.version_format value?'
@@ -176,7 +176,7 @@ questions:
             - { value: "php bin/console new-project my_project_name", correct: false }
             - { value: "symfony new my_project_name --full", correct: true }
         help: |
-            https://symfony.com/doc/5.0/setup/flex.html#using-symfony-flex-in-new-applications
+            https://symfony.com/doc/5.0/setup.html#creating-symfony-applications
 
     -   question: 'Using Flex is mandatory since Symfony 4.0'
         answers:
