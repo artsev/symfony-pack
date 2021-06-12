@@ -130,7 +130,7 @@ questions:
             tabs are not allowed in yaml https://yaml.org/faq.html
             https://github.com/symfony/symfony/blob/5.0/src/Symfony/Component/Yaml/Yaml.php#L96
 
-    -   question: 'Symfony is released under which license ?'
+    -   question: 'Symfony is released under which license?'
         answers:
             - { value: "GNU General Public License (GPL)", correct: false }
             - { value: "ISC License", correct: false }
@@ -138,7 +138,7 @@ questions:
             - { value: "MIT license", correct: true }
         help: |
             https://symfony.com/doc/5.0/contributing/code/license.html
-    -   question: 'Which kernel event exist ?'
+    -   question: 'Which kernel event exists?'
         answers:
             - { value: "kernel.request", correct: true }
             - { value: "kernel.controller", correct: true }
@@ -191,7 +191,7 @@ questions:
             - { value: "templates/bundles/TwigBundle/Exception/error500.html.twig", correct: false }
             - { value: "src/Controller/ExceptionController", correct: false }
         help: |
-            'https://symfony.com/doc/5.0/controller/error_pages.html#overriding-the-default-error-templates'
+            https://symfony.com/doc/5.0/controller/error_pages.html#overriding-the-default-error-templates
     -   question: 'Is the translation activated by default?'
         answers:
             - { value: No, correct: true }

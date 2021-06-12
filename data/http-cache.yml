@@ -7,8 +7,7 @@ questions:
             - { value: <include src="http://..." />,     correct: false }
             - { value: <esi src="http://..." />,         correct: false }
         help: |
-            'https://symfony.com/doc/5.0/http_cache/esi.html'
-
+            https://symfony.com/doc/5.0/http_cache/esi.html
     -   question: 'What is the Twig function to render an ESI?'
         answers:
             - { value: cache_esi(),  correct: false }
@@ -16,7 +15,7 @@ questions:
             - { value: esi_render(), correct: false }
             - { value: render_esi(), correct: true }
         help: |
-            'https://symfony.com/doc/5.0/http_cache/esi.html'
+            https://symfony.com/doc/5.0/http_cache/esi.html
 
     -   question: 'Which HTTP headers belong to the expiration cache model?'
         answers:
@@ -26,7 +25,7 @@ questions:
             - { value: Cache-Control, correct: true }
             - { value: Cookie,        correct: false }
         help: |
-            'https://symfony.com/doc/5.0/http_cache/expiration.html'
+            https://symfony.com/doc/5.0/http_cache/expiration.html
     -   question: 'Which HTTP headers belong to the validation cache model?'
         answers:
             - { value: Expires,       correct: false }
@@ -48,7 +47,7 @@ questions:
             - { value: "True",     correct: true }
             - { value: "False",    correct: false }
         help: |
-            'https://symfony.com/doc/5.0/http_cache/esi.html'
+            https://symfony.com/doc/5.0/http_cache/esi.html
     -   question: 'According to HTTP/1.1 what is the max value for Expires?'
         answers:
             - { value: "One year", correct: true }
@@ -62,7 +61,7 @@ questions:
             - { value: "True",     correct: true }
             - { value: "False",    correct: false }
         help: |
-            'https://symfony.com/doc/5.0/http_cache/expiration.html'
+            https://symfony.com/doc/5.0/http_cache/expiration.html
     -   question: 'True or False? Using ETag saves CPU cycles.'
         answers:
             - { value: "True",     correct: false }

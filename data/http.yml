@@ -74,7 +74,7 @@ questions:
             - { value: BinaryFileResponse, correct: true }
             - { value: XmlResponse,        correct: false }
         help: |
-            'https://symfony.com/doc/5.0/components/http_foundation.html#response'
+            https://symfony.com/doc/5.0/components/http_foundation.html#response
     -   question: 'Which HTTP status code should be used for a resource that moved temporarily ?'
         answers:
             - { value: 301, correct: false }
@@ -122,7 +122,7 @@ questions:
             - { value: "404.html.twig",   correct: false }
             - { value: "twig.404.html.twig",   correct: false }
         help: |
-            'https://symfony.com/doc/5.0/controller/error_pages.html#overriding-the-default-error-templates'
+            https://symfony.com/doc/5.0/controller/error_pages.html#overriding-the-default-error-templates
     -   question: 'Which of the following HTTP headers can be used by the server to the client to exchange information about cookies?'
         answers:
             - { value: 'Cookie', correct: false }

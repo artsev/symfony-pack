@@ -119,8 +119,8 @@ questions:
             - { value: cannotBeEmpty(),        correct: true }
             - { value: setDefaultValue(),   correct: false }
             - { value: setValidation(),     correct: false }
-        help:
-            'https://symfony.com/doc/5.0/components/config/definition.html'
+        help: |
+            https://symfony.com/doc/5.0/components/config/definition.html
     -   question: 'Which class is used to define hierarchy of configuration values?'
         answers:
             - { value: Symfony\Component\Config\Definition\Builder\TreeBuilder,      correct: true }

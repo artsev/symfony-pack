@@ -118,7 +118,7 @@ questions:
             - { value: "public: false", correct: true }
             - { value: "private: true", correct: false }
         help: |
-            'Services are private by default. https://symfony.com/doc/5.0/service_container.html#public-versus-private-services'
+            Services are private by default. https://symfony.com/doc/5.0/service_container.html#public-versus-private-services
     -   question: "True or False, With default configuration each time you retrieve the service, you'll get the same instance ?"
         answers:
             - { value: "true", correct: true }

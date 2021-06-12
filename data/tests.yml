@@ -7,7 +7,7 @@ questions:
             - { value: shutdown(),    correct: false }
             - { value: tearDown(),    correct: true }
         help: |
-            'https://www.w3resource.com/php/PHPUnit/fixtures.php'
+            https://www.w3resource.com/php/PHPUnit/fixtures.php
 
     -   question: 'How to disable constructor when mocking an object?'
         answers:
@@ -16,7 +16,7 @@ questions:
             - { value: $this->getMockBuilder('My\Class')->disableOriginalConstructor()->getMock(), correct: true }
             - { value: $this->getMockBuilder('My\Class')->getMock()->disableConstructor(),         correct: false }
         help: |
-            'https://phpunit.de/manual/6.5/en/test-doubles.html#test-doubles.stubs.examples.StubTest2.php'
+            https://phpunit.de/manual/6.5/en/test-doubles.html#test-doubles.stubs.examples.StubTest2.php
     -   question: 'Which Symfony class offers method to test commands?'
         answers:
             - { value: Symfony\Component\Console\Tester\Command,           correct: false }
@@ -24,7 +24,7 @@ questions:
             - { value: Symfony\Component\Console\Tester\CommandUnitTester, correct: false }
             - { value: Symfony\Component\Console\Tester\CommandUnit,       correct: false }
         help: |
-            'https://symfony.com/doc/5.0/console.html#testing-commands'
+            https://symfony.com/doc/5.0/console.html#testing-commands
     -   question: 'Using PHPUnit, which method allows to specify a mock response on second call?'
         answers:
             - { value: $mock->expects($this->at(1)),      correct: true }
@@ -32,7 +32,7 @@ questions:
             - { value: $mock->expects($this->exactly(2)), correct: false }
             - { value: $mock->expects($this->on(2)),      correct: false }
         help: |
-            'https://phpunit.de/manual/6.5/en/test-doubles.html'
+            https://phpunit.de/manual/6.5/en/test-doubles.html
     -   question: 'Using PHPUnit, which method allows you to expect an exception to be thrown?'
         answers:
             - { value: $this->setExpectedException('MyException'), correct: false }
@@ -40,7 +40,7 @@ questions:
             - { value: $this->expectException('MyException'),      correct: true }
             - { value: $this->setExpected('MyException'),          correct: false }
         help: |
-            'https://phpunit.de/manual/6.5/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.exceptions'
+            https://phpunit.de/manual/6.5/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.exceptions
 
     -   question: 'What command used for run all of your application tests by default?'
         answers:
@@ -49,7 +49,7 @@ questions:
             - { value: phpunit -c,       correct: false }
             - { value: phpunit,          correct: true }
         help: |
-            'https://symfony.com/doc/5.0/testing.html#unit-tests'
+            https://symfony.com/doc/5.0/testing.html#unit-tests
     -   question: 'Where do functional tests live in Symfony (inside a project structure)?'
         answers:
             - { value: Tests/,               correct: false }
@@ -60,7 +60,7 @@ questions:
             - { value: Tests/Controllers/,   correct: false }
             - { value: Controller/,          correct: false }
         help: |
-            'https://symfony.com/doc/5.0/testing.html#your-first-functional-test'
+            https://symfony.com/doc/5.0/testing.html#your-first-functional-test
     -   question: 'Using Symfony\Component\BrowserKit\Client which of these methods can be called?'
         answers:
             - { value: back(),     correct: true }
@@ -71,7 +71,7 @@ questions:
             - { value: reload(),  correct: true }
             - { value: next(),     correct: false }
         help: |
-            'https://github.com/symfony/browser-kit/blob/master/AbstractBrowser.php'
+            https://github.com/symfony/browser-kit/blob/master/AbstractBrowser.php
     -   question: 'Using Swiftmailer, which of these configuration allows to disable email delivery?'
         answers:
             - { value: 'swiftmailer.disable_delivery: true', correct: true }
@@ -90,7 +90,7 @@ questions:
             - { value: $client->followRedirects(),   correct: true }
             - { value: $client->redirectAll(),       correct: false }
         help: |
-            'followRedirects() is tricky as it will follow ALL redirections. https://symfony.com/doc/5.0/testing.html#redirecting'
+            followRedirects() is tricky as it will follow ALL redirections. https://symfony.com/doc/5.0/testing.html#redirecting
     -   question: |
             PHPUnit
             Which is the method that allows to execute some code after each test defined by a class?
