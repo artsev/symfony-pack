@@ -7,7 +7,7 @@ questions:
             - { value: return $this->redirect('http://www.example.org'),                     correct: true }
             - { value: return $this->generateUrl('http://www.example.org'),                  correct: false }
         help: |
-            'https://symfony.com/doc/5.0/controller.html#redirecting'
+            https://symfony.com/doc/5.0/controller.html#redirecting
     -   question: 'Which class may be extended by your controllers?'
         answers:
             - { value: Symfony\Bundle\FrameworkBundle\Controller\AbstractController,    correct: true }
@@ -15,7 +15,7 @@ questions:
             - { value: Symfony\Bundle\HttpBundle\Controller\AbstractController,         correct: false }
             - { value: Symfony\Component\MvcBundle\Controller\AbstractController,       correct: false }
         help: |
-            'https://symfony.com/doc/5.0/controller.html#the-base-controller-classes-services'
+            https://symfony.com/doc/5.0/controller.html#the-base-controller-classes-services
     -   question: 'Which of these annotations can be used in a controller?'
         answers:
             - { value: '@Cache',          correct: true }
@@ -37,7 +37,7 @@ questions:
             - { value: RedirectResponse,   correct: false }
             - { value: StreamedResponse,   correct: false }
         help: |
-            'https://symfony.com/doc/5.0/components/http_foundation.html#response'
+            https://symfony.com/doc/5.0/components/http_foundation.html#response
     -   question: 'Which class will you use to convert an action parameter?'
         answers:
             - { value: Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter,     correct: true }
@@ -45,7 +45,7 @@ questions:
             - { value: Symfony\Bundle\FrameworkBundle\Configuration\ParamConverter,          correct: false }
             - { value: Symfony\Bundle\FrameworkBundle\Controller\ParamConverter,    correct: false }
         help: |
-            'https://symfony.com/doc/5.0/bundles/SensioFrameworkExtraBundle/annotations/converters.html'
+            https://symfony.com/doc/5.0/bundles/SensioFrameworkExtraBundle/annotations/converters.html
     -   question: 'Which controller/action allows to render a template without a specific controller?'
         answers:
             - { value: Symfony\Bundle\FrameworkBundle\Controller\TemplateController, correct: true }
@@ -53,7 +53,7 @@ questions:
             - { value: Symfony\Bundle\FrameworkBundle\Controller\TwigController,     correct: false }
             - { value: Sensio\Bundle\FrameworkExtraBundle\Controller\TwigController,   correct: false }
         help: |
-            'https://symfony.com/doc/5.0/templates.html#rendering-a-template-directly-from-a-route'
+            https://symfony.com/doc/5.0/templates.html#rendering-a-template-directly-from-a-route
     -   question: |
             According to this action :
 
@@ -74,4 +74,4 @@ questions:
             - { value: '@ParamConverter("post", options={"mapping": {"Post": "slug"}})', correct: false }
             - { value: 'It is not possible, params and fields must match', correct: false }
         help: |
-            'https://symfony.com/doc/5.0/bundles/SensioFrameworkExtraBundle/annotations/converters.html#doctrineconverter-options'
+            https://symfony.com/doc/5.0/bundles/SensioFrameworkExtraBundle/annotations/converters.html#doctrineconverter-options
