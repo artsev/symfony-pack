@@ -22,11 +22,11 @@ questions:
             - { value: '@ParamConverter', correct: true }
             - { value: '@Security',       correct: true }
             - { value: '@Template',       correct: true }
-            - { value: '@Method',         correct: false }
+            - { value: '@Method',         correct: true }
             - { value: '@Post',           correct: false }
             - { value: '@CatchException',           correct: false }
         help: |
-            'https://symfony.com/doc/5.0/bundles/SensioFrameworkExtraBundle/index.html#annotations-for-controllers'
+            https://symfony.com/doc/5.0/bundles/SensioFrameworkExtraBundle/index.html#annotations-for-controllers
     -   question: 'Which of these response objects does not exists?'
         answers:
             - { value: XmlResponse,        correct: true }
