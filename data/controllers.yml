@@ -27,7 +27,7 @@ questions:
             - { value: '@CatchException',           correct: false }
         help: |
             https://symfony.com/doc/5.0/bundles/SensioFrameworkExtraBundle/index.html#annotations-for-controllers
-    -   question: 'Which of these response objects does not exists?'
+    -   question: 'Which of these response objects does not exist?'
         answers:
             - { value: XmlResponse,        correct: true }
             - { value: FileResponse,        correct: true }
