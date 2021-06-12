@@ -167,7 +167,7 @@ questions:
             - { value: "$this->createFormBuilder()->addDefaults($defaultEntityOrArray)", correct: false }
         help: |
             https://symfony.com/doc/5.0/components/form.html#setting-default-values
-    -   question: 'Your Form class must extends ____ '
+    -   question: 'Your Form class must extend ____ '
         answers:
             - { value: Symfony\Component\Form\FormType,                      correct: false }
             - { value: Symfony\Component\Form\AbstractType,                  correct: true }
