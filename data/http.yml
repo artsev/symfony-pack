@@ -241,10 +241,10 @@ questions:
                 correct: false
             -   value: |
                     Request-Line CRLF Headers CRLF CRLF Body
-                correct: false
+                correct: true
             -   value: |
                     Request-Line Headers CRLF CRLF Body
-                correct: true
+                correct: false
         help: |
             https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html
 
