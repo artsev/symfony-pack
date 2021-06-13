@@ -201,13 +201,13 @@ questions:
                                 return 25;
                             },
                     );
-                correct: true
+                correct: false
             -   value: |
                     $options = array(
                         'encryption' => 'SSL',
                         'port' => 25,
                     );
-                correct: false
+                correct: true
         help: |
             http://symfony.com/doc/5.0/components/options_resolver.html#default-values-that-depend-on-another-option
     -   question: |
